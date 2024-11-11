@@ -44,7 +44,6 @@
 
             <!-- sidebar body -->
             <div class="aside-body">
-                <p class="user-name" style="color: black; font-weight: 600;">Olá, <?php echo $_SESSION['user_name'] ?></p><br>
                 <ul>
                     <?php
                         foreach($projArray as $project){

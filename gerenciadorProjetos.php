@@ -43,7 +43,7 @@
                         preg_match_all('/\b\w/u', $string, $m);
                         echo implode('',$m[0]);
                     ?></div>
-                    <button type="button" class="btn btn-warning"><?php echo $_SESSION['user_name'] ?></button>
+                    <div class="text-name-War"><?php echo $_SESSION['user_name'] ?></div>
                 </div>
             </div>
           </div>

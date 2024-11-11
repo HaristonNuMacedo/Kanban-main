@@ -37,7 +37,8 @@ p.user-name {
 .aside-header {
     min-height: 80px;
     border-bottom: 1px solid #E6E6E6;
-    padding-top: 15px;
+    padding-top: 27px;
+    padding-bottom: 30px;
 }
 
 .aside-title-container {

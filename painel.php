@@ -2,18 +2,18 @@
 
 <section class="cards-container">
 
-    <!-- card fazer -->
+    <!-- card pendente -->
     <?php if($count1 == 0){
     ?>
         <div class="card">
-            <div class="card-header">
+            <div class="card-header-1">
             <p><i class="fas fa-thumbtack"></i>Pendente </p>
             <p><?php echo $count1 ?> / <?php echo $countTotal ?></p>
         </div>
 
-        <div class="card-body">
+        <div class="card-body-1">
             <div class="card-item">
-                    <p style="font-size: 16px;">adicionar tarefa</p>
+                    <p style="font-size: 16px; color: #555">Adicionar Tarefa</p>
                 </div>  
             </div>
         </div>
@@ -24,12 +24,12 @@
         if($taskVerify['task_status'] == 1){
     ?>
         <div class="card">
-            <div class="card-header">
+            <div class="card-header-1">
                 <p><i class="fas fa-thumbtack"></i>Pendente </p>
                 <p><?php echo $count1 ?> / <?php echo $countTotal ?></p>
             </div>
             
-            <div class="card-body">
+            <div class="card-body-1">
 
             <?php foreach($tasks as $task){ 
                 if($task['task_status'] == 1){
@@ -52,7 +52,7 @@
         </div>
     <?php break; } } } }?>
 
-    <!-- /card fazer-->
+    <!-- /card pendente-->
 
     <!-- card em andamento -->
 
@@ -66,7 +66,7 @@
 
         <div class="card-body">
             <div class="card-item">
-                    <p style="font-size: 16px;">adicionar tarefa</p>
+                    <p style="font-size: 16px; color: #fff;">Adicionar Tarefa</p>
                 </div>  
             </div>
         </div>
@@ -103,19 +103,18 @@
     <?php break; } } } }?>
     <!-- /card em andamento-->
 
-
     <!-- card conluído -->
     <?php if($count3 == 0){
     ?>
         <div class="card">
-            <div class="card-header">
+            <div class="card-header-3">
             <p><i class="fas fa-check-circle"></i>Concluído </p>
             <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
         </div>
     
-        <div class="card-body">
+        <div class="card-body-3">
             <div class="card-item">
-                    <p style="font-size: 16px;">adicionar tarefa</p>
+                    <p style="font-size: 16px; color: #fff">Adicionar Tarefa</p>
                 </div>  
             </div>
         </div>
@@ -126,12 +125,12 @@
             if($taskVerify['task_status'] == 3){
         ?>
     <div class="card">
-        <div class="card-header">
+        <div class="card-header-3">
             <p><i class="fas fa-check-circle"></i>Concluído </p>
             <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
         </div>
 
-        <div class="card-body">
+        <div class="card-body-3">
             <?php foreach($tasks as $task){ 
                 if($task['task_status'] == 3){
             ?>

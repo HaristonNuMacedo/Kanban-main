@@ -10,7 +10,13 @@
             <p><i class="fas fa-thumbtack"></i>Pendente </p>
             <p><?php echo $count1 ?> / <?php echo $countTotal ?></p>
         </div>
-            <div class="card-body">
+
+        <div class="card-body">
+            <div class="card-item">
+                    <p style="font-size: 16px;">adicionar tarefa</p>
+                </div>  
+            </div>
+        </div>
 
     <?php } else { ?>
 
@@ -54,10 +60,16 @@
     ?>
         <div class="card">
             <div class="card-header">
-            <p><i class="fas fa-thumbtack"></i>Em andamento  </p>
+            <p><i class="fas fa-clock"></i>Em andamento  </p>
             <p><?php echo $count2 ?> / <?php echo $countTotal ?></p>
         </div>
-            <div class="card-body">
+
+        <div class="card-body">
+            <div class="card-item">
+                    <p style="font-size: 16px;">adicionar tarefa</p>
+                </div>  
+            </div>
+        </div>
 
     <?php } else { ?>
 
@@ -97,10 +109,16 @@
     ?>
         <div class="card">
             <div class="card-header">
-            <p><i class="fas fa-thumbtack"></i>Concluído </p>
+            <p><i class="fas fa-check-circle"></i>Concluído </p>
             <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
         </div>
-            <div class="card-body">
+    
+        <div class="card-body">
+            <div class="card-item">
+                    <p style="font-size: 16px;">adicionar tarefa</p>
+                </div>  
+            </div>
+        </div>
 
     <?php } else { ?>
 

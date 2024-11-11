@@ -52,7 +52,17 @@
   
     <main class="d-flex flex-nowrap">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; border-right: 1px solid white;" id="lateralGerenciador">
-            <hr>
+        <?php
+            $pName = 'Nenhum projeto selecionado';
+                foreach($projArray as $project){
+                    if($project['project_status'] == 1){
+                        $pName = $project['project_name'];
+                        $pId = $project['project_id'];
+                    }
+                }
+            ?>    
+        <p class="nameProjectKanban"><?php echo $pName;?></p>
+            <hr style="text-decoration: none;">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item" id="teste1">
                 <a href="#" class="nav-link" id="visaoGeral" onclick="abrir01()" style="color: white;">
@@ -96,16 +106,44 @@
                     Tabela - Estilo Excel
                 </a>
                 </li>
-                <li>
-                <a href="#" class="nav-link" id="visaoGeral06" onclick="abrir06()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
-                        <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
-                      </svg>
-                    Dashboard
-                </a>
-                </li>
             </ul>
+
+            <div class="flex-shrink-0"  id="UsuarioPgMeioProjects">
+                <div class="aside-header">
+                    <div class="aside-title-container">
+                        <h2 style="color: #FFF; font-size: 22px; margin-top: 6px;">Projeto aberto</h2>
+                        <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
+                    </div>
+
+                    <div class="new-project-form">
+                        <form action="kanban.controller.php?action=newProject" method="post">
+                            <input type="text" name="projectName" id="" placeholder="Nome do projeto">
+                            <button type="submit"><i class="fas fa-chevron-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+           
+                    <div class="aside-body">
+                        <ul>
+                            <?php
+                                foreach($projArray as $project){
+                                    $status = $project['project_status'];
+                            ?>        
+                                <a href="kanban.controller.php?action=selectProject&id=<?php echo $project['project_id'];?>" style="text-decoration: none;">
+                                    <li class="project-item
+                                        <?php if($status == 1){ echo 'current';} ?>
+                                    ">
+                                        <h3><?php echo $project['project_name']; ?></h3>
+                                        <p> ---  &nbsp <?php echo $project['n_done'] ?> / <?php echo $project['n_total'] ?></p>
+                                    </li>
+                                </a>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                    <!-- /sidebar body -->
+                </div>
             <hr>
+
             <div class="flex-shrink-0"  id="UsuarioPg">
                 <div class="text-center">
                     <div class="aside-footer">
@@ -155,6 +193,10 @@
             </object>
                 
         </section>
+
+        <div class="flex-shrink-0"  id="UsuarioPgMeioProjects">
+                    
+        </div>
     </main>
 
     <script src="./assets/js/functionAbrirPaginacao.js"></script>

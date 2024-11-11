@@ -1,3 +1,14 @@
+*{
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 body{
     background-color: #222!important;
 }
@@ -225,6 +236,163 @@ html {
     margin-left: 15px;
     margin-top: 10px;
   }
+
+  .nameProjectKanban {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: -10px;
+    margin-bottom: -10px;
+  }
+
+
+
+
+
+
+
+
+
+  p.user-name {
+    margin-left: 10px;
+}
+
+.aside-header {
+    position: relative;
+    top: 25px;
+    min-height: 80px;
+    border-top: 1px solid #E6E6E6;
+    padding-top: 27px;
+    padding-bottom: 30px;
+}
+
+.aside-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    color: #FFF;
+}
+
+.aside-title-container i {
+    background-color: #609DF9;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+  .new-project-form {
+    width: 90%;
+    height: 50px;
+    padding-top: 10px;
+    position: relative;
+    margin: 0 auto;
+    display: none;
+}
+
+.new-project-form input,.new-project-form button {
+    height: 35px;
+    margin: 0;
+}
+
+.new-project-form input[type="text"]{
+    width: calc(100% - 35px);
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+}
+
+.new-project-form input[type="text"]::placeholder {
+    color: #BABABA;
+}
+
+.new-project-form button[type="submit"]{
+    width: 35px;
+    text-align: center;
+    margin-left: -5px;
+    background-color: #609DF9;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    top: 10;
+}
+
+.new-project-form button[type="submit"] i {
+    color: #fff;
+}
+
+.aside-body {
+  height: calc(55vh - 110px);
+  padding-top: 25px;
+  overflow-y: auto;
+}
+
+.aside-body a {
+  color: #fff;
+}
+
+.project-item {
+  cursor: pointer;
+  transition: .3s;
+  padding: 15px 10px 5px 20px;
+  font-size: 16px;
+  outline: none;
+  text-decoration: none;
+  width: 240px;
+  margin-left: -25px;
+  display: inline-flex;
+}
+
+.project-item h3 {
+  font-size: 16px;
+  text-decoration: none!important;
+}
+
+.project-item p {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none!important;
+  position: relative;
+  width: 80px;
+  left: 10px;
+}
+
+.project-item:hover{
+  background-color: #F3F1F1;
+  color: #000;
+}
+
+#UsuarioPgMeioProjects {
+  text-decoration: none;
+}
+
+li.current {
+  background-color: #E6E6E6;
+  border-right: 3px solid #609DF9;
+  color: #000;
+}
+
+li.current p {
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #BABABA;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
 
 
 

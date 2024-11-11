@@ -22,51 +22,6 @@
 <body>
     <div class="container" style="background-color: #fff!important;">
 
-        <!-- 
-            SIDEBAR
-         -->
-        <aside class="sidebar">
-            <!-- sidebar header -->
-            <div class="aside-header">
-                <div class="aside-title-container">
-                    <h2 style="color: black;">Projetos</h2>
-                    <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
-                </div>
-
-                <div class="new-project-form">
-                    <form action="kanban.controller.php?action=newProject" method="post">
-                        <input type="text" name="projectName" id="" placeholder="Nome do projeto">
-                        <button type="submit"><i class="fas fa-chevron-right"></i></button>
-                    </form>
-                </div>
-            </div>
-            <!-- /sidebar header -->
-
-            <!-- sidebar body -->
-            <div class="aside-body">
-                <ul>
-                    <?php
-                        foreach($projArray as $project){
-                            $status = $project['project_status'];
-                    ?>        
-                        <a href="kanban.controller.php?action=selectProject&id=<?php echo $project['project_id'];?>">
-                            <li class="project-item
-                                <?php if($status == 1){ echo 'current';} ?>
-                            ">
-                                <h3><?php echo $project['project_name']; ?></h3>
-                                <p><?php echo $project['n_done'] ?> de <?php echo $project['n_total'] ?> tarefas</p>
-                            </li>
-                        </a>
-                    <?php } ?>
-                </ul>
-            </div>
-            <!-- /sidebar body -->
-        </aside>
-       
-
-        <!-- 
-            MAIN
-         -->
         <section class="main-content">
 
             <div class="hidden-menu" onclick="hideMenu()"></div>
@@ -93,7 +48,7 @@
                             ?>
                         </h2>
                         <?php if(isset($pId)) { ?>
-                        <p><?php echo $count3 ?> de <?php echo $countTotal ?></p>
+                        <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
                         <?php } ?>
                     </div>
                     <?php if(isset($pId)){ ?>

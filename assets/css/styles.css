@@ -103,7 +103,7 @@ li.current {
 }
 
 .aside-body {
-    height: calc(100vh - 120px);
+    height: 0px;
     padding-top: 25px;
     overflow-y: auto;
 }

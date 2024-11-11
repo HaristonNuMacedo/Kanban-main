@@ -15,8 +15,11 @@ img.gerenciadorLogo{
 }
 
 .btn-warning {
+    position: relative;
+    top: -3px;
     background-color: #00b2f0!important;
     border: #00b2f0!important;
+
 }
 
 .flex-shrink-0 .text-end {
@@ -222,5 +225,41 @@ html {
     margin-left: 15px;
     margin-top: 10px;
   }
+
+
+
+  #usuárioIdent {
+    position: relative;
+    top: 0px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+
+  .aside-footer{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    }
+
+    .aside-footer a {
+        text-decoration: none;
+    }
+
+    .aside-footer p, .aside-footer i {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+    }
 
   

@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="assets/js/App.js" defer></script>
+    <script src="../js/App.js" defer></script>
     <title>Kanban Board</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
 
             <!-- sidebar body -->
             <div class="aside-body">
-                <p class="user-name" style="color: black;">Olá, <?php echo $_SESSION['user_name'] ?></p><br>
+                <p class="user-name" style="color: black; font-weight: 600;">Olá, <?php echo $_SESSION['user_name'] ?></p><br>
                 <ul>
                     <?php
                         foreach($projArray as $project){
@@ -62,12 +62,6 @@
                 </ul>
             </div>
             <!-- /sidebar body -->
-
-            <!-- sidebar footer -->
-            <div class="aside-footer">
-                <a href="login.controller.php?action=logout"><p>Sair <i class="fas fa-sign-out-alt"></i></p></a>
-            </div>
-            <!-- /sidebar footer -->
         </aside>
        
 

@@ -1,3 +1,6 @@
+<?php
+    require 'kanban.controller.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,11 +10,18 @@
     <link rel="sorcut icon" href="./assets/img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
     <link rel="stylesheet" href="./assets/css/gerenciadorProjetos.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="./assets/js/App.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -28,8 +38,12 @@
     
             <div class="flex-shrink-0">
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Cadastro</button>
+                    <div id="usuárioIdent"><?php
+                        $string = $_SESSION['user_name'];
+                        preg_match_all('/\b\w/u', $string, $m);
+                        echo implode('',$m[0]);
+                    ?></div>
+                    <button type="button" class="btn btn-warning"><?php echo $_SESSION['user_name'] ?></button>
                 </div>
             </div>
           </div>
@@ -94,8 +108,9 @@
             <hr>
             <div class="flex-shrink-0"  id="UsuarioPg">
                 <div class="text-center">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Cadastro</button>
+                    <div class="aside-footer">
+                        <a href="login.controller.php?action=logout"><p>Sair <i class="fas fa-sign-out-alt"></i></p></a>
+                    </div>
                 </div>
             </div>
         </div>

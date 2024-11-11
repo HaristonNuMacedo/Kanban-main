@@ -20,7 +20,7 @@
     <title>Kanban Board</title>
 </head>
 <body>
-    <div class="container" style="background-color: #609DF9!important;">
+    <div class="container" style="background-color: #fff!important;">
 
         <!-- 
             SIDEBAR
@@ -30,7 +30,7 @@
             <div class="aside-header">
                 <div class="aside-title-container">
                     <h2 style="color: black;">Projetos</h2>
-                    <i class="fas fa-plus btn-add" onclick="addProjectForm()"></i>
+                    <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
                 </div>
 
                 <div class="new-project-form">

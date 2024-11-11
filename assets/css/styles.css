@@ -11,14 +11,12 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-color: #609DF9!important;
 }
 
 div.container {
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
-    background-color: #609DF9!important;
 }
 
 /*=============== 

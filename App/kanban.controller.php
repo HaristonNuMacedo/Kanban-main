@@ -87,7 +87,7 @@
 
             $project->selectProject();
 
-            header('location: painel.php');
+            header('location: gerenciadorProjetos.php');
         }
 
         //cria um novo projeto
@@ -101,7 +101,7 @@
             $project->__set('project_name', $projectName);
 
             $project->newProject();
-            header('location: painel.php');
+            header('location: gerenciadorProjetos.php');
         }
 
         //exclui um projeto
@@ -117,7 +117,7 @@
             
             $project->delete();
             
-            header('location: painel.php');
+            header('location: gerenciadorProjetos.php');
         }
 
         //edita o nome do projeto
@@ -134,7 +134,7 @@
 
             $project->editName();
 
-            header('location: painel.php');
+            header('location: gerenciadorProjetos.php');
         }
 
         //deleta a tarefa
@@ -166,11 +166,25 @@
 
             $task->update('status');
 
-            header('location: painel.php?refresh');
+            header('location: paniel.php?refresh');
         }
 
         //cadastra nova tarefa no db
         if($_GET['action'] == 'task-register'){
+            $db = new Db();
+            $task = new Task();
+
+            $task->__set('db', $db->connect());
+            $task->__set('taskName', $_POST['task']);
+            $task->__set('taskDescription', $_POST['taskDescription']);
+            $task->__set('projectId', $_POST['id']);
+            $task->__set('taskStatus', 1);
+
+            $task->create();
+            header('location: gerenciadorProjetos.php?refresh');
+        }
+
+        if($_GET['action'] == 'task-register2'){
             $db = new Db();
             $task = new Task();
 
@@ -195,7 +209,7 @@
             $task->__set('taskDescription', $_POST['description']);
 
             $task->update('task');
-            header('location: painel.php');
+            header('location: gerenciadorProjetos.php');
         }
 
 

@@ -4,7 +4,7 @@
 
     <div class="task-register">
         <h3>Adicione uma nova tarefa</h3>
-        <form action="kanban.controller.php?action=task-register" method="post">
+        <form action="kanban.controller.php?action=task-register2" method="post">
             <div class="input-task">
                 <label for="task"></label>
                 <input name="task" type="text" placeholder="Digite a tarefa">

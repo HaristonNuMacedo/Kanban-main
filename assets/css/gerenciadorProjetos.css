@@ -25,6 +25,24 @@ img.gerenciadorLogo{
     margin-left: 10px;
 }
 
+#usuarioIdent {
+  position: relative;
+  top: 0px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding-top: 2px;
+  padding-left: 1px;
+}
+
 .text-name-War {
     padding: 0 5px;
     border: #00b2f0!important;
@@ -397,20 +415,7 @@ li.current p {
 
 
 
-  #usuárioIdent {
-    position: relative;
-    top: 0px;
-    height: 38px;
-    width: 38px;
-    border-radius: 50%;
-    background-color: #fff;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 600;
-  }
+  
 
 
   .aside-footer{

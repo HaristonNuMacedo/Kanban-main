@@ -38,7 +38,7 @@
     
             <div class="flex-shrink-0">
                 <div class="text-end">
-                    <div id="usuárioIdent"><?php
+                    <div id="usuarioIdent"><?php
                         $string = $_SESSION['user_name'];
                         preg_match_all('/\b\w/u', $string, $m);
                         echo implode('',$m[0]);
@@ -194,8 +194,39 @@
                 
         </section>
 
-        <div class="flex-shrink-0"  id="UsuarioPgMeioProjects">
-                    
+        <div class="flex-shrink-0"  id="UsuarioPgMeioProjects" style="display: none;">
+                <div class="aside-header">
+                    <div class="aside-title-container">
+                        <h2 style="color: #FFF; font-size: 22px; margin-top: 6px;">Projeto aberto</h2>
+                        <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
+                    </div>
+
+                    <div class="new-project-form">
+                        <form action="kanban.controller.php?action=newProject" method="post">
+                            <input type="text" name="projectName" id="" placeholder="Nome do projeto">
+                            <button type="submit"><i class="fas fa-chevron-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+           
+                    <div class="aside-body">
+                        <ul>
+                            <?php
+                                foreach($projArray as $project){
+                                    $status = $project['project_status'];
+                            ?>        
+                                <a href="kanban.controller.php?action=selectProject&id=<?php echo $project['project_id'];?>" style="text-decoration: none;">
+                                    <li class="project-item
+                                        <?php if($status == 1){ echo 'current';} ?>
+                                    ">
+                                        <h3><?php echo $project['project_name']; ?></h3>
+                                        <p> ---  &nbsp <?php echo $project['n_done'] ?> / <?php echo $project['n_total'] ?></p>
+                                    </li>
+                                </a>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                    <!-- /sidebar body -->
         </div>
     </main>
 

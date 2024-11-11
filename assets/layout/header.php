@@ -43,13 +43,7 @@
                 <i class="fas fa-bars" onclick="showMenu()"></i>
                 <div class="project-info">
                     <div class="text-container">
-                        <h2><?php
-                            echo $pName;
-                            ?>
-                        </h2>
-                        <?php if(isset($pId)) { ?>
-                        <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
-                        <?php } ?>
+                        
                     </div>
                     <?php if(isset($pId)){ ?>
                     <div class="btn-container">

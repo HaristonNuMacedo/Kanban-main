@@ -157,8 +157,8 @@ li.current {
 
 /* header */
 section.main-content {
-    width: calc(100vw - 250px);
-    margin-left: 250px;
+    width: calc(100vw - 2px);
+    margin-left: 0px;
     min-height: 100vh;
     background-color: #FAFAFA;
 }

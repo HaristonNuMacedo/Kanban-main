@@ -3,14 +3,26 @@
 <section class="cards-container">
 
     <!-- card fazer -->
+    <?php if($count1 == 0){
+    ?>
+        <div class="card">
+            <div class="card-header">
+            <p><i class="fas fa-thumbtack"></i>Pendente </p>
+            <p><?php echo $count1 ?> / <?php echo $countTotal ?></p>
+        </div>
+            <div class="card-body">
+
+    <?php } else { ?>
+
     <?php if(isset($tasks)){foreach($tasks as $taskVerify){
         if($taskVerify['task_status'] == 1){
     ?>
         <div class="card">
             <div class="card-header">
-                <p><i class="fas fa-thumbtack"></i>Fazer </p>
+                <p><i class="fas fa-thumbtack"></i>Pendente </p>
                 <p><?php echo $count1 ?> / <?php echo $countTotal ?></p>
             </div>
+            
             <div class="card-body">
 
             <?php foreach($tasks as $task){ 
@@ -32,19 +44,33 @@
                 
             </div>
         </div>
-    <?php break; } } }?>
+    <?php break; } } } }?>
 
     <!-- /card fazer-->
 
     <!-- card em andamento -->
-    <?php if(isset($tasks)){foreach($tasks as $taskVerify){
-        if($taskVerify['task_status'] == 2){
+
+    <?php if($count2 == 0){
     ?>
+        <div class="card">
+            <div class="card-header">
+            <p><i class="fas fa-thumbtack"></i>Em andamento  </p>
+            <p><?php echo $count2 ?> / <?php echo $countTotal ?></p>
+        </div>
+            <div class="card-body">
+
+    <?php } else { ?>
+
+    <?php if(isset($tasks)){foreach($tasks as $taskVerify){
+            if($taskVerify['task_status'] == 2){
+        ?>
         <div class="card">
             <div class="card-header">
                 <p><i class="fas fa-clock"></i></i>Em andamento </p>
                 <p><?php echo $count2 ?> / <?php echo $countTotal ?></p>
             </div>
+            
+
             <div class="card-body">
                 <?php foreach($tasks as $task){ 
                     if($task['task_status'] == 2){
@@ -62,19 +88,31 @@
                 <?php } } ?>
             </div>
         </div>
-    <?php break; } } } ?>
+    <?php break; } } } }?>
     <!-- /card em andamento-->
 
 
     <!-- card conluído -->
-    <?php if(isset($tasks)){foreach($tasks as $taskVerify){
-        if($taskVerify['task_status'] == 3){
+    <?php if($count3 == 0){
     ?>
+        <div class="card">
+            <div class="card-header">
+            <p><i class="fas fa-thumbtack"></i>Concluído </p>
+            <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
+        </div>
+            <div class="card-body">
+
+    <?php } else { ?>
+
+    <?php if(isset($tasks)){foreach($tasks as $taskVerify){
+            if($taskVerify['task_status'] == 3){
+        ?>
     <div class="card">
         <div class="card-header">
             <p><i class="fas fa-check-circle"></i>Concluído </p>
             <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
         </div>
+
         <div class="card-body">
             <?php foreach($tasks as $task){ 
                 if($task['task_status'] == 3){
@@ -91,7 +129,7 @@
             <?php } } ?> 
         </div>
     </div>
-    <?php break; } } } ?>
+    <?php break; } } } }?>
     <!-- /card concluído -->
 
 </section>

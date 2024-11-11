@@ -15,12 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="assets/js/App.js" defer></script>
     <title>Kanban Board</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="background-color: #609DF9!important;">
 
         <!-- 
             SIDEBAR
@@ -29,7 +29,7 @@
             <!-- sidebar header -->
             <div class="aside-header">
                 <div class="aside-title-container">
-                    <h2>Projetos</h2>
+                    <h2 style="color: black;">Projetos</h2>
                     <i class="fas fa-plus btn-add" onclick="addProjectForm()"></i>
                 </div>
 
@@ -44,7 +44,7 @@
 
             <!-- sidebar body -->
             <div class="aside-body">
-                <p class="user-name">Olá, <?php echo $_SESSION['user_name'] ?></p>
+                <p class="user-name" style="color: black;">Olá, <?php echo $_SESSION['user_name'] ?></p><br>
                 <ul>
                     <?php
                         foreach($projArray as $project){

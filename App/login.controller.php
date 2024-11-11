@@ -20,7 +20,7 @@
                 $_SESSION['user_id'] = $userInfo[0]['user_id'];
                 $_SESSION['user_name'] = $userInfo[0]['user_name'];
 
-                header('location: painel.php?refresh');
+                header('location: gerenciadorProjetos.php?refresh');
             }else{
                 echo 'Não foi possivel fazer o login';
             }

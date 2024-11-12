@@ -134,7 +134,7 @@
 
             $project->editName();
 
-            header('location: gerenciadorProjetos.php');
+            header('location: gerenciadorProjetos.php?refresh');
         }
 
         //deleta a tarefa
@@ -149,7 +149,7 @@
 
             $task->delete();
 
-            header('location: painel.php?refresh');
+            header('location: painel.php');
         }
 
         // marca a tarefa como "em andamento"
@@ -166,7 +166,7 @@
 
             $task->update('status');
 
-            header('location: paniel.php?refresh');
+            header('location: painel.php');
         }
 
         //cadastra nova tarefa no db

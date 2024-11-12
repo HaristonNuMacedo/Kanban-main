@@ -260,17 +260,22 @@ section.cards-container{
 .card-body{
     background-color: #bfe8ff;
     padding: 10px;
-    border-radius: 0px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .card-body-1{
     background-color: #ddd;
     padding: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .card-body-3{
     background-color: #b6fac2;
     padding: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .card-item{
@@ -316,13 +321,12 @@ div.hidden-menu{
     display: none;
 }
 
-.inserirTask-container {
+.inserirTask-container, .inserirTask-container2, .inserirTask-container3 {
     width: 100%;
     background-color: transparent;
 }
 
-.inserirTask-container a input{
-    background-color: #ddd;
+.inserirTask-container a input, .inserirTask-container2 a input, .inserirTask-container3 a input{
     color: #555;
     font-weight: 600;
     width: 100%;
@@ -332,13 +336,35 @@ div.hidden-menu{
     border-bottom-right-radius: 4px;
 }
 
-.inserirTask-container a span {
-    position: relative;
+.inserirTask-container a input {
+    background-color: #ddd;
 }
 
 .inserirTask-container a input:hover {
     background-color: #ccc;
 }
+
+.inserirTask-container2 a input {
+    background-color: #bfe8ff;
+}
+
+.inserirTask-container2 a input:hover {
+    background-color: #a3d5f1;
+}
+
+.inserirTask-container3 a input {
+    background-color: #b6fac2;
+}
+
+.inserirTask-container3 a input:hover {
+    background-color: #8cec9d;
+}
+
+.inserirTask-container a span {
+    position: relative;
+}
+
+
 
 
 

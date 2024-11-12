@@ -17,7 +17,7 @@
                 </div>  
             </div>
             <div class="inserirTask-container">
-                <a href="task-register.php"><input type="button" value="Adicionar Tarefa"></a>
+                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
             </div>
         </div>
         
@@ -50,7 +50,9 @@
                     </div>
                 </div>
             <?php } } ?>
-                
+            <div class="inserirTask-container">
+                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
+            </div>
             </div>
         </div>
 
@@ -72,6 +74,9 @@
             <div class="card-item">
                     <p style="font-size: 16px; color: #555;"></p>
                 </div>  
+            </div>
+            <div class="inserirTask-container2">
+                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
             </div>
         </div>
 
@@ -102,6 +107,9 @@
                         </div>
                     </div>
                 <?php } } ?>
+                <div class="inserirTask-container2">
+                    <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
+                </div>
             </div>
         </div>
     <?php break; } } } }?>
@@ -120,6 +128,9 @@
             <div class="card-item">
                     <p style="font-size: 16px; color: #555"></p>
                 </div>  
+            </div>
+            <div class="inserirTask-container3">
+                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
             </div>
         </div>
 
@@ -148,6 +159,9 @@
                 </div>
             </div>
             <?php } } ?> 
+            <div class="inserirTask-container3">
+                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
+            </div>
         </div>
     </div>
     <?php break; } } } }?>

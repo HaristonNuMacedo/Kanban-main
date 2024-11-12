@@ -194,6 +194,13 @@
                     <a class="nav-link" href="#"><i class="fas fa-user-slash"></i> Remover Usuário</a>
                     </li>
                 </ul>
+                <div class="btn-project-info">
+                    <?php if(isset($pId)){ ?>
+                    <div class="btn-container">
+                        <a href="task-register.php"><input type="button" value="Adicionar Tarefa +"></a>
+                    </div>
+                </div> 
+                <?php } ?>
             </nav>
             
             <object type="text/html" data="https://ge.globo.com/" id="testeInserir" style="display: none; transition: all .5s ease-out;">

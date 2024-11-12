@@ -178,7 +178,7 @@ header.main-header {
     font-size: 16px;
     border-bottom: 3px solid #609DF9;
     position: relative;
-    top: -33px;
+    top: 5px;
 }
 
 .main-header i.fa-bars {

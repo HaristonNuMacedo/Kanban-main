@@ -195,7 +195,7 @@
             $task->__set('taskStatus', 1);
 
             $task->create();
-            header('location: painel.php?refresh');
+            header('location: gerenciadorProjetos.php?refresh');
         }
 
         //edita a tarefa

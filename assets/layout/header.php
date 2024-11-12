@@ -47,7 +47,7 @@
                     </div>
                     <?php if(isset($pId)){ ?>
                     <div class="btn-container">
-                        <a href="task-register.php"><input type="button" value="adicionar tarefa +"></a>
+                        
                     </div>
                 </div> 
 

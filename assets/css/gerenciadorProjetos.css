@@ -567,3 +567,21 @@ li.current p {
   cursor: pointer;
 }
 
+.btn-project-info {
+  position: absolute;
+  top: 14px;
+  right: 55px;
+}
+
+.btn-project-info a input {
+    border: none;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #609DF9;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+
+

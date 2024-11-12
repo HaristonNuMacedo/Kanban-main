@@ -23,36 +23,21 @@
     <div class="container" style="background-color: #fff!important;">
 
         <section class="main-content">
-
             <div class="hidden-menu" onclick="hideMenu()"></div>
-
             <!-- header -->
             <header class="main-header">
                 <?php
                 $pName = 'Nenhum projeto selecionado';
                     foreach($projArray as $project){
-                        
-
                         if($project['project_status'] == 1){
                             $pName = $project['project_name'];
                             $pId = $project['project_id'];
                         }
                     }
                 ?>
-
                 <i class="fas fa-bars" onclick="showMenu()"></i>
-                <div class="project-info">
-                    <div class="text-container">
-                        
-                    </div>
-                    <?php if(isset($pId)){ ?>
-                    <div class="btn-container">
-                        
-                    </div>
-                </div> 
-
-                <?php
-                    } foreach($projArray as $project){
+                    <?php if(isset($pId)){ } 
+                    foreach($projArray as $project){
                         if($project['project_status'] == 1){
                             $pName = $project['project_name'];
                             $pId = $project['project_id'];

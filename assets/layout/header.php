@@ -47,10 +47,6 @@
                     </div>
                     <?php if(isset($pId)){ ?>
                     <div class="btn-container">
-                        <i class="fas fa-pen" onclick="editProjectName(<?php echo $pId?>)"></i>
-                        <a href="kanban.controller.php?action=deleteProject&id=<?php echo $pId;?>"><i class="fas fa-trash"></i></a>
-                        
-                        
                         <a href="task-register.php"><input type="button" value="adicionar tarefa +"></a>
                     </div>
                 </div>

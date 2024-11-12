@@ -1,9 +1,22 @@
 
 function abrirCRUDproject() {
-    let CRUDPRO = document.querySelector('#CRUDproject');
+    let CRUDPRO = document.querySelector('#TelaCRUD');
     CRUDPRO.style.display = 'block';
-    CRUDPROstyle.bottom = -250; 
+
+    let CRUDPRO02 = document.querySelector('#CRUDproject');
+    CRUDPRO02.style.display = 'block';
+    
 }
+
+function fecharCRUDproject() {
+    let CRUDPRO = document.querySelector('#TelaCRUD');
+    CRUDPRO.style.display = 'none';
+
+    let CRUDPRO02 = document.querySelector('#CRUDproject');
+    CRUDPRO02.style.display = 'none';
+    
+}
+
 
 function abrir01() {
     var visaoG = document.querySelector('#visaoGeral')

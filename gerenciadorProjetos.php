@@ -145,6 +145,7 @@
 
                                 <?php } ?>
 
+                            <div id="TelaCRUD" onclick="fecharCRUDproject()">
                                 <div id="CRUDproject">
                                     <div class="btn-container">
                                         <a onclick="editProjectName(<?php echo $pId?>)"><i class="fas fa-pen" ></i><label>Editar projeto</label></a>
@@ -152,6 +153,7 @@
                                         <a href="task-register.php"><input type="button" value="adicionar tarefa +"></a>
                                     </div>           
                                 </div>
+                            </div>
                         </ul>
                     <!-- /sidebar body -->
                     </div>

@@ -8,7 +8,7 @@
         <div class="card">
             <div class="card-header-1">
             <p><i class="fas fa-thumbtack"></i>Pendente </p>
-            <p><?php echo $count1 ?> / <?php echo $countTotal ?></p>
+            <p><?php echo $count1 ?> &nbsp</p>
         </div>
 
         <div class="card-body-1">
@@ -26,7 +26,7 @@
         <div class="card">
             <div class="card-header-1">
                 <p><i class="fas fa-thumbtack"></i>Pendente </p>
-                <p><?php echo $count1 ?> / <?php echo $countTotal ?></p>
+                <p><?php echo $count1 ?> &nbsp</p>
             </div>
             
             <div class="card-body-1">
@@ -61,12 +61,12 @@
         <div class="card">
             <div class="card-header">
             <p><i class="fas fa-clock"></i>Em andamento  </p>
-            <p><?php echo $count2 ?> / <?php echo $countTotal ?></p>
+            <p><?php echo $count2 ?> &nbsp</p>
         </div>
 
         <div class="card-body">
             <div class="card-item">
-                    <p style="font-size: 16px; color: #fff;">Adicionar Tarefa</p>
+                    <p style="font-size: 16px; color: #555;">Adicionar Tarefa</p>
                 </div>  
             </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="card">
             <div class="card-header">
                 <p><i class="fas fa-clock"></i></i>Em andamento </p>
-                <p><?php echo $count2 ?> / <?php echo $countTotal ?></p>
+                <p><?php echo $count2 ?> &nbsp</p>
             </div>
             
 
@@ -109,12 +109,12 @@
         <div class="card">
             <div class="card-header-3">
             <p><i class="fas fa-check-circle"></i>Concluído </p>
-            <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
+            <p><?php echo $count3 ?> &nbsp</p>
         </div>
     
         <div class="card-body-3">
             <div class="card-item">
-                    <p style="font-size: 16px; color: #fff">Adicionar Tarefa</p>
+                    <p style="font-size: 16px; color: #555">Adicionar Tarefa</p>
                 </div>  
             </div>
         </div>
@@ -127,7 +127,7 @@
     <div class="card">
         <div class="card-header-3">
             <p><i class="fas fa-check-circle"></i>Concluído </p>
-            <p><?php echo $count3 ?> / <?php echo $countTotal ?></p>
+            <p><?php echo $count3 ?> &nbsp</p>
         </div>
 
         <div class="card-body-3">

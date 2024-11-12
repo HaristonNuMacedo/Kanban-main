@@ -51,7 +51,7 @@
                         <a href="kanban.controller.php?action=deleteProject&id=<?php echo $pId;?>"><i class="fas fa-trash"></i></a>
                         
                         
-                        <a href="task-register.php"><input type="button" value="adicionar tarefa"></a>
+                        <a href="task-register.php"><input type="button" value="adicionar tarefa +"></a>
                     </div>
                 </div>
 

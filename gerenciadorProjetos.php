@@ -21,6 +21,8 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
+
+    <script src="./assets/js/abrirImagem.js"></script>
     
 </head>
 
@@ -122,9 +124,11 @@
                         </form>
                     </div>
                 </div>
+
+                
            
                     <div class="aside-body">
-                        <ul>
+                        <ul style="padding-left: 0px;">
                             <?php
                                 foreach($projArray as $project){
                                     $status = $project['project_status'];
@@ -134,13 +138,23 @@
                                         <?php if($status == 1){ echo 'current';} ?>
                                     ">
                                         <h3><?php echo $project['project_name']; ?></h3>
-                                        <p> ---  &nbsp <?php echo $project['n_done'] ?> / <?php echo $project['n_total'] ?></p>
+                                        <p> &nbsp <?php echo $project['n_done'] ?> / <?php echo $project['n_total'] ?></p>
                                     </li>
                                 </a>
-                            <?php } ?>
+                                <div id="tresPontos" onclick="abrirCRUDproject()"><label>...</label></div>
+
+                                <?php } ?>
+
+                                <div id="CRUDproject">
+                                    <div class="btn-container">
+                                        <a onclick="editProjectName(<?php echo $pId?>)"><i class="fas fa-pen" ></i><label>Editar projeto</label></a>
+                                        <a href="kanban.controller.php?action=deleteProject&id=<?php echo $pId;?>"><i class="fas fa-trash"></i><label style="margin-left: 7px;">Excluir projeto</label></a>
+                                        <a href="task-register.php"><input type="button" value="adicionar tarefa +"></a>
+                                    </div>           
+                                </div>
                         </ul>
-                    </div>
                     <!-- /sidebar body -->
+                    </div>
                 </div>
             <hr>
 

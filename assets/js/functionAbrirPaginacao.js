@@ -1,3 +1,10 @@
+
+function abrirCRUDproject() {
+    let CRUDPRO = document.querySelector('#CRUDproject');
+    CRUDPRO.style.display = 'block';
+    CRUDPROstyle.bottom = -250; 
+}
+
 function abrir01() {
     var visaoG = document.querySelector('#visaoGeral')
     visaoG.style.background = "#00b2f0";

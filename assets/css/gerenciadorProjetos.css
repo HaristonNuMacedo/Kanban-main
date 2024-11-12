@@ -353,18 +353,20 @@ html {
 .project-item {
   cursor: pointer;
   transition: .3s;
-  padding: 15px 10px 5px 20px;
+  padding: 12px 10px 0px 5px;
   font-size: 16px;
   outline: none;
   text-decoration: none;
-  width: 240px;
-  margin-left: -25px;
+  width: 245px;
+  margin-left: 2px;
   margin-top: 5px;
   display: inline-flex;
+  border-radius: 2px;
 }
 
 .project-item h3 {
   font-size: 16px;
+  width: 380px;
   text-decoration: none!important;
 }
 
@@ -374,7 +376,8 @@ html {
   text-decoration: none!important;
   position: relative;
   width: 80px;
-  left: 10px;
+  right: 30px;
+  top: 1px;
 }
 
 .project-item:hover{
@@ -437,3 +440,66 @@ li.current p {
     }
 
   
+
+
+
+
+
+#CRUDproject {
+  position: fixed;
+  display: none;
+  width: 150px;
+  height: 110px;
+  background-color: #fff;
+  cursor: pointer;;
+}
+
+#CRUDproject .btn-container {
+  display: grid;
+  padding-top: 2px;
+  padding-left: 0px;
+}
+
+#CRUDproject .btn-container i, #CRUDproject .btn-container a {
+  color: #000;
+  cursor: pointer;
+  margin-top: 6px; margin-left: 5px;
+  text-decoration: none;
+}
+
+#CRUDproject .btn-container a label {
+  font-weight: 500;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#CRUDproject .btn-container a input {
+ padding: 0px 10px;
+}
+
+#tresPontos {
+  position: relative;
+  width: 32px; height: 40px;
+  background-color: #E6E6E6;
+  color: #000;
+  cursor: pointer;
+  top: -43px;
+  left: 208px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 2px;
+  margin-bottom: -40px;
+}
+
+#tresPontos:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+#tresPontos label {
+  position: relative;
+  top: 0px;
+  left: 8px;
+  cursor: pointer;
+}
+

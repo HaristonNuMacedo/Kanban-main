@@ -23,7 +23,9 @@ function hideMenu(){
     menuBackground.style.display = 'none';
 }
 
+
 //faz aparacer ou esconder o formulário de cadastro de projetos
+
 function addProjectForm(){
 
     let form = document.querySelector('.new-project-form');

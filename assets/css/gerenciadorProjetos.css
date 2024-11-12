@@ -291,7 +291,7 @@ html {
   }
 
   .nav-underline .nav-link {
-    color: #fff;
+    color: #bbb;
   }
 
   .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
@@ -299,6 +299,10 @@ html {
     font-weight: 600!important;
     color: #00b2f0!important;
     border-bottom-color: currentcolor;
+}
+
+.nav-underline .nav-link:focus {
+  color: #fff;
 }
 
 .userJoker {
@@ -500,8 +504,8 @@ li.current p {
 #CRUDproject {
   position: fixed;
   display: none;
-  width: 155px;
-  height: 110px;
+  width: 180px;
+  height: 125px;
   background-color: #ccc;
   cursor: pointer;
   z-index: 10;

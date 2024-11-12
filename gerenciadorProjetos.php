@@ -60,6 +60,8 @@
                     if($project['project_status'] == 1){
                         $pName = $project['project_name'];
                         $pId = $project['project_id'];
+                        $done = $project['n_done']; 
+                        $total = $project['n_total']; 
                     }
                 }
             ?>

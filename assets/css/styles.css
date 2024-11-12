@@ -166,7 +166,8 @@ section.main-content {
 }
 
 header.main-header {
-    min-height: 100px;
+    min-height: 50px;
+    height: 50px;
     background-color: #fff;
     border-bottom: 1px solid #E6E6E6;
 }
@@ -176,6 +177,8 @@ header.main-header {
     display: inline-block;
     font-size: 16px;
     border-bottom: 3px solid #609DF9;
+    position: relative;
+    top: -33px;
 }
 
 .main-header i.fa-bars {

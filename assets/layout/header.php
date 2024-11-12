@@ -49,10 +49,22 @@
                     <div class="btn-container">
                         <a href="task-register.php"><input type="button" value="adicionar tarefa +"></a>
                     </div>
-                </div>
+                </div> 
 
-                <h2 class="text-detail">Quadro</h2>
-                <?php } ?>
+                <?php
+                    } foreach($projArray as $project){
+                        if($project['project_status'] == 1){
+                            $pName = $project['project_name'];
+                            $pId = $project['project_id'];
+                            $done = $project['n_done']; 
+                            $total = $project['n_total']; 
+                        }
+                    }
+                ?>
+
+                <h2 class="text-detail">Tarefas Totais - <?php echo $total; ?></h2>
+                <h2 class="text-detail">Tarefas conluídas - <?php echo $done; ?></h2>
+                <h2 class="text-detail">Tarefas NÃO conluídas - <?php $Nclu = $total-$done; echo $Nclu; ?></h2>
             </header>
             <!-- /header -->
 

@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Kanban - Login</title>
+    <title>Carregando...</title>
+    <link rel="sorcut icon" href="img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0e1538;
+    }
+
+    label {
+       position: relative; 
+    }
+
+    #loader {
+        position: absolute;
+        top: 45%;
+        border: 8px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 8px solid #00b2f0;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+</style>
 </head>
-<body>
-    <section class="main-login">
-        <div class="container-login">
-            <form action="login.controller.php?action=login" method="post">
-                <p class="kanban-title">Kanban</p>
-                <input type="email" name="email" placeholder="Digite o seu email">
-                <input type="password" name="pass" placeholder="Digite a sua senha">
-                <input type="submit" value="Entrar">
-                <div class="container-p">
-                    <a href="register.php"><p>Cadastrar</p></a>
-                </div>
-            </form>
-        </div>
-    </section>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      window.location.href = "login.php";
+    }
+</script>
+
 </body>
 </html>

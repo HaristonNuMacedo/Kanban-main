@@ -209,7 +209,7 @@
             $task->__set('taskDescription', $_POST['description']);
 
             $task->update('task');
-            header('location: gerenciadorProjetos.php');
+            header('location: painel.php');
         }
 
 

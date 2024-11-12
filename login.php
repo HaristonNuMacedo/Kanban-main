@@ -4,25 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Kanban - Login</title>
+    <title>Login</title>
+
+    <link rel="sorcut icon" href="./assets/img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
+    <link rel="stylesheet" href="./assets/css/login-style.css"><link rel="sorcut icon" href="img/logoPartnership.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
 </head>
 <body>
-    <section class="main-login">
-        <div class="container-login">
-            <form action="login.controller.php?action=login" method="post">
-                <p class="kanban-title">Kanban</p>
-                <input type="email" name="email" placeholder="Digite o seu email">
-                <input type="password" name="pass" placeholder="Digite a sua senha">
-                <input type="submit" value="Entrar">
-                <div class="container-p">
-                    <a href="register.php"><p>Cadastrar</p></a>
+    <header>
+        <div class="menu02">
+            <div id="logoPrincipal">
+                <a href="login.php">
+                    <img src="./assets/img/Logo-removebg-preview.png">
+                    <!--<h2><span>&nbsp; O</span>lkaha <span>S</span>oluções <span>C</span>orporativas</h2>-->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+
+        <div class="boxLogin">
+            <div class="square" style="--i:0"></div>
+            <div class="square" style="--i:1"></div>
+            <div class="square" style="--i:2"></div>
+            <div class="square" style="--i:3"></div>
+            <div class="square" style="--i:4"></div>
+
+            <div class="container">
+                <div class="form">
+                    <h2>Efetuar Login</h2>
+                    <form action="login.controller.php?action=login" method="post">
+                        <div class="inputBox">
+                            <input type="email" name="email" placeholder="E-mail">
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="password" name="pass" placeholder="Senha">
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="submit" value="Login">
+                        </div>
+
+                        <p class="forget">Caso não tenha login, <a href="register.php">Cadastra-se</a></p>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
 </body>

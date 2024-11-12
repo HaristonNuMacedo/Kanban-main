@@ -24,8 +24,8 @@
         border-top: 8px solid #00b2f0;
         width: 60px;
         height: 60px;
-        -webkit-animation: spin 2s linear infinite; /* Safari */
-        animation: spin 2s linear infinite;
+        -webkit-animation: spin .8s linear infinite; /* Safari */
+        animation: spin .8s linear infinite;
     }
 
     /* Safari */

@@ -104,7 +104,7 @@ function taskEdit(id){
 
     let btn = document.createElement('input');
     btn.type = 'submit';
-    btn.value = 'editar';
+    btn.value = 'Editar';
     btn.className = 'taskedit-btn';
 
     form.appendChild(inputName);

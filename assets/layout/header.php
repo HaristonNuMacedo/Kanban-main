@@ -4,6 +4,7 @@
     if(isset($_GET['refresh'])){
         header('location: painel.php');
     }
+
 ?>
 
 <html lang="pt-br">

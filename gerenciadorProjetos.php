@@ -1,5 +1,13 @@
 <?php
     require 'kanban.controller.php';
+
+    if(isset($_GET['refresh'])){
+        header('location: painel.php');
+    }
+
+    if(isset($_GET['refresh'])){
+        header('location: gerenciadorProjetos.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -226,33 +234,12 @@
                         <h2 style="color: #FFF; font-size: 22px; margin-top: 6px;">Projeto aberto</h2>
                         <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
                     </div>
-
-                    <div class="new-project-form">
-                        <form action="kanban.controller.php?action=newProject" method="post">
-                            <input type="text" name="projectName" id="" placeholder="Nome do projeto">
-                            <button type="submit"><i class="fas fa-chevron-right"></i></button>
-                        </form>
-                    </div>
                 </div>
            
-                    <div class="aside-body">
-                        <ul>
-                            <?php
-                                foreach($projArray as $project){
-                                    $status = $project['project_status'];
-                            ?>        
-                                <a href="kanban.controller.php?action=selectProject&id=<?php echo $project['project_id'];?>" style="text-decoration: none;">
-                                    <li class="project-item
-                                        <?php if($status == 1){ echo 'current';} ?>
-                                    ">
-                                        <h3><?php echo $project['project_name']; ?></h3>
-                                        <p> ---  &nbsp <?php echo $project['n_done'] ?> / <?php echo $project['n_total'] ?></p>
-                                    </li>
-                                </a>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                    <!-- /sidebar body -->
+                <div class="aside-body">
+                        
+                </div>
+                <!-- Abertura Lateral direita -->
         </div>
     </main>
 

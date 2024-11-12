@@ -89,7 +89,7 @@ function abrir02() {
     abrirJanela.style.display = "none";
 
     var abrirJanela02 = document.querySelector('#testeInserir02')
-    abrirJanela02.style.display = "block";
+    abrirJanela02.style.display = "block"
 }
 
 function abrir03() {

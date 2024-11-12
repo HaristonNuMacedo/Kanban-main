@@ -149,7 +149,7 @@
 
             $task->delete();
 
-            header('location: painel.php');
+            header('location: painel.php?refresh');
         }
 
         // marca a tarefa como "em andamento"
@@ -181,7 +181,7 @@
             $task->__set('taskStatus', 1);
 
             $task->create();
-            header('location: gerenciadorProjetos.php?refresh');
+            header('location: painel.php?refresh');
         }
 
         if($_GET['action'] == 'task-register2'){
@@ -195,7 +195,7 @@
             $task->__set('taskStatus', 1);
 
             $task->create();
-            header('location: gerenciadorProjetos.php?refresh');
+            header('location: painel.php?refresh');
         }
 
         //edita a tarefa
@@ -210,6 +210,9 @@
 
             $task->update('task');
             header('location: painel.php');
+            if(isset($_GET['refresh'])){
+                header('location: gerenciadorProjetos.php');
+            }
         }
 
 

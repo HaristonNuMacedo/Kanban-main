@@ -134,8 +134,6 @@
                     </div>
                 </div>
 
-                
-           
                     <div class="aside-body">
                         <ul style="padding-left: 0px;">
                             <?php
@@ -159,7 +157,7 @@
                                     <div class="btn-container">
                                         <a onclick="editProjectName(<?php echo $pId?>)"><i class="fas fa-pen" ></i><label>Editar projeto</label></a>
                                         <a href="kanban.controller.php?action=deleteProject&id=<?php echo $pId;?>"><i class="fas fa-trash"></i><label style="margin-left: 7px;">Excluir projeto</label></a>
-                                        <a href="task-register.php"><input type="button" value="adicionar tarefa +"></a>
+                                        <a href="task-register.php"><input type="button" value="Adicionar Tarefa +"></a>
                                     </div>           
                                 </div>
                             </div>

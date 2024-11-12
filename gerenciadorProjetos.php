@@ -62,8 +62,15 @@
                         $pId = $project['project_id'];
                     }
                 }
-            ?>    
-        <p class="nameProjectKanban"><?php echo $pName;?></p>
+            ?>
+            <div class="userJoker">
+                <p class="nameProjectKanban"><?php
+                        $string = $_SESSION['user_name'];
+                        preg_match_all('/\b\w/u', $string, $m);
+                        echo implode('',$m[0]);
+                ?></p>
+                <p class="nameProjectKanban2">Administrador</p>
+            </div>   
             <hr style="text-decoration: none;">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item" id="teste1">
@@ -173,22 +180,18 @@
             <nav id="subnavegacaoCentral">
                 <ul class="nav nav-underline">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Usuários</a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-stream"></i><?php echo ' ', $pName;?></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Adicionar Usuário</a>
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                        </svg> Usuários</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Remover Usuário</a>
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i>+ Adicionar Usuário</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"><i class="fas fa-user-slash"></i> Remover Usuário</a>
                     </li>
                 </ul>
             </nav>

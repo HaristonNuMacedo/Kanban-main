@@ -13,11 +13,14 @@
 
         <div class="card-body-1">
             <div class="card-item">
-                    <p style="font-size: 16px; color: #555">Adicionar Tarefa</p>
+                    <p style="font-size: 16px; color: #555"></p>
                 </div>  
             </div>
+            <div class="inserirTask-container">
+                <a href="task-register.php"><input type="button" value="Adicionar Tarefa"></a>
+            </div>
         </div>
-
+        
     <?php } else { ?>
 
     <?php if(isset($tasks)){foreach($tasks as $taskVerify){
@@ -50,6 +53,7 @@
                 
             </div>
         </div>
+
     <?php break; } } } }?>
 
     <!-- /card pendente-->
@@ -66,7 +70,7 @@
 
         <div class="card-body">
             <div class="card-item">
-                    <p style="font-size: 16px; color: #555;">Adicionar Tarefa</p>
+                    <p style="font-size: 16px; color: #555;"></p>
                 </div>  
             </div>
         </div>
@@ -114,7 +118,7 @@
     
         <div class="card-body-3">
             <div class="card-item">
-                    <p style="font-size: 16px; color: #555">Adicionar Tarefa</p>
+                    <p style="font-size: 16px; color: #555"></p>
                 </div>  
             </div>
         </div>

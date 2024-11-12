@@ -119,7 +119,7 @@
 
                     <div class="new-project-form">
                         <form action="kanban.controller.php?action=newProject" method="post">
-                            <input type="text" name="projectName" id="" placeholder="Nome do projeto">
+                            <input type="text" name="projectName" id="" placeholder="Adicionar projeto">
                             <button type="submit"><i class="fas fa-chevron-right"></i></button>
                         </form>
                     </div>

@@ -111,7 +111,7 @@
             <div class="flex-shrink-0"  id="UsuarioPgMeioProjects">
                 <div class="aside-header">
                     <div class="aside-title-container">
-                        <h2 style="color: #FFF; font-size: 22px; margin-top: 6px;">Projeto aberto</h2>
+                        <h2 style="color: #FFF; font-size: 20px; margin-top: 6px;">Canal de Projeto(s)</h2>
                         <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
                     </div>
 

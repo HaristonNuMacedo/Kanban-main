@@ -253,7 +253,7 @@
                             <div id="selectField">
                                 <p id="selectText"><i id="colorIcon" class="fas fa-flag" style="color: #fff;"></i>Prioridade</p>
                             </div>
-                            <ul id="list">
+                            <ul id="list" class="hide">
                                 <li class="options">
                                     <p><i class="fas fa-flag" style="color: red;"></i>Alta</p>
                                 </li>
@@ -278,6 +278,11 @@
         var selectText = document.getElementById("selectText");
         var options = document.getElementsByClassName("options");
         var colorIcon = document.getElementById("colorIcon");
+        var list = document.getElementById("list");
+
+        selectField.onclick = function() {
+            list.classList.toggle("hide");
+        }
         
         for(option of options) {
             option.onclick = function() {

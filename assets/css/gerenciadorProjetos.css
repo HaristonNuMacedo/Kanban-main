@@ -656,6 +656,7 @@ input.task02, textarea {
   border-radius: 6px;
   margin-top: 10px;
   margin-left: 28px;
+  cursor: pointer;
 }
 
 #selectField p i {
@@ -692,6 +693,10 @@ input.task02, textarea {
 
 .options p i {
   margin-right: 15px;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 

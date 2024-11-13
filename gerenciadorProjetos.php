@@ -163,15 +163,15 @@
 
                                 <?php } ?>
 
-                            <div id="TelaCRUD" onclick="fecharCRUDproject()">
-                                <div id="CRUDproject">
+                            <div id="TelaCRUD" onclick="fecharCRUDproject()"></div>
+                                <div id="CRUDproject" >
                                     <div class="btn-container">
                                         <a onclick="editProjectName(<?php echo $pId?>)"><i class="fas fa-pen" ></i><label>Editar projeto</label></a>
                                         <a href="kanban.controller.php?action=deleteProject&id=<?php echo $pId;?>"><i class="fas fa-trash"></i><label style="margin-left: 7px;">Excluir projeto</label></a>
                                         <a href="task-register.php"><input type="button" value="Adicionar Tarefa +"></a>
+                                        <div class="BtnSalvar02"><input type="button" value="Salvar" onclick="fecharCRUDproject2()"></div>
                                     </div>           
                                 </div>
-                            </div>
                         </ul>
                     <!-- /sidebar body -->
                     </div>
@@ -208,7 +208,7 @@
                 <div class="btn-project-info">
                     <?php if(isset($pId)){ ?>
                     <div class="btn-container">
-                        <a href="task-register.php"><input type="button" value="Adicionar Tarefa +"></a>
+                        <div class="ButtonIsert02" onclick="addsTaaskForm()"><input type="button" value="Adicionar Tarefa +"></div>
                     </div>
                 </div> 
                 <?php } ?>
@@ -233,20 +233,41 @@
 
         <script src="assets/js/App.js"></script>
 
-        <div class="flex-shrink-0"  id="UsuarioPgMeioProjects" style="display: none;">
+        <div id="TelaCRUDTask" onclick="fecharCRUDTask2()"></div>
+        
+        <div class="flex-shrink-0"  id="Pag2UsuarioPgMeioProjects" style="display: none;">
                 <div class="aside-header">
                     <div class="aside-title-container">
-                        <h2 style="color: #FFF; font-size: 22px; margin-top: 6px;">Projeto aberto</h2>
-                        <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
+                        <h2 style="color: #FFF; font-size: 22px; margin-top: 6px;">Adicionar Tarefa</h2>
                     </div>
                 </div>
            
                 <div class="aside-body">
-                        
+                    <form action="kanban.controller.php?action=task-register" method="post">
+                        <div class="input-task">
+                            <label for="task"></label>
+                            <input name="task" type="text" placeholder="Digite a tarefa">
+                        </div>
+
+                        <input type="hidden" name="id" value="<?php echo $pId ?>">
+
+                        <label for="task-description"></label>
+                        <textarea name="taskDescription" placeholder="Escreva uma descrição"></textarea>
+                            
+                        <input type="submit" value="Cadastrar">
+                    </form>  
                 </div>
                 <!-- Abertura Lateral direita -->
         </div>
     </main>
+
+    <script>
+        /*$(document).ready(function () {
+            setTimeout(function () {
+                window.location.reload(1);
+            }, 5000); //tempo em milisegundos. Neste caso, o refresh vai acontecer de 5 em 5 segundos.
+        });*/
+    </script>
 
     <script src="./assets/js/functionAbrirPaginacao.js"></script>
 

@@ -9,12 +9,35 @@ function abrirCRUDproject() {
 }
 
 function fecharCRUDproject() {
-    let CRUDPRO = document.querySelector('#TelaCRUD');
-    CRUDPRO.style.display = 'none';
+    let CRUDPROFechar = document.querySelector('#TelaCRUD');
+    CRUDPROFechar.style.display = 'none';
 
-    let CRUDPRO02 = document.querySelector('#CRUDproject');
-    CRUDPRO02.style.display = 'none';
-    
+    let CRUDPRO02fechar = document.querySelector('#CRUDproject');
+    CRUDPRO02fechar.style.display = 'none';
+} 
+
+function fecharCRUDproject2() {
+    let CRUDPROs2 = document.querySelector('#TelaCRUD');
+    CRUDPROs2.style.display = 'none';
+
+    let CRUDPRObtn02 = document.querySelector('#CRUDproject');
+    CRUDPRObtn02.style.display = 'none';
+}
+
+function addsTaaskForm() {
+    let TaskProFormTela = document.querySelector('#TelaCRUDTask');
+    TaskProFormTela.style.display = 'block';
+
+    let TaskProForm = document.querySelector('#Pag2UsuarioPgMeioProjects');
+    TaskProForm.style.display = 'block';
+}
+
+function fecharCRUDTask2() {
+    let TaskfecharTela = document.querySelector('#TelaCRUDTask');
+    TaskfecharTela.style.display = 'none';
+
+    let TaskProFormX = document.querySelector('#Pag2UsuarioPgMeioProjects');
+    TaskProFormX.style.display = 'none';
 }
 
 
@@ -53,7 +76,6 @@ function abrir01() {
 
     var abrirJanela = document.querySelector('#testeInserir')
     abrirJanela.style.display = "block";
-
 }
 
 function abrir02() {

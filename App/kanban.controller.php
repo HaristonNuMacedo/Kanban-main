@@ -28,11 +28,11 @@
         $taskArray = $taskModel->read();
 
         //seta o total de tarefas cadastradas
-        $total = count($taskArray);
+        $_SESSION['total'] = count($taskArray);
         $setTotalTask = new Project();
         $setTotalTask->__set('project_id', $id);
         $setTotalTask->__set('db', $db->connect());
-        $setTotalTask->__set('total', $total);
+        $setTotalTask->__set('total', $_SESSION['total']);
         $setTotalTask->setTotal();
 
         $done = 0;
@@ -166,7 +166,7 @@
 
             $task->update('status');
 
-            header('location: painel.php');
+            header('location: painel.php?refresh');
         }
 
         //cadastra nova tarefa no db
@@ -211,12 +211,8 @@
             $task->update('task');
             header('location: painel.php');
             if(isset($_GET['refresh'])){
-                header('location: gerenciadorProjetos.php');
+                header('location: painel.php?refresh');
             }
-        }
-
-
-
-        
+        }     
     }
 ?>

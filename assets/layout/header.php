@@ -5,6 +5,8 @@
         header('location: painel.php');
     }
 
+    $total = $_SESSION['user_id']; 
+
 ?>
 
 <html lang="pt-br">

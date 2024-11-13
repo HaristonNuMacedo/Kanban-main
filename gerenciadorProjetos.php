@@ -8,6 +8,9 @@
     if(isset($_GET['refresh'])){
         header('location: gerenciadorProjetos.php');
     }
+
+    $total = $_SESSION['total']; 
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -53,7 +56,7 @@
                         preg_match_all('/\b\w/u', $string, $m);
                         echo implode('',$m[0]);
                     ?></div>
-                    <div class="text-name-War"><?php echo $_SESSION['user_name'] ?></div>
+                    <div class="text-name-War"><?php echo $_SESSION['user_name']; ?></div>
                 </div>
             </div>
           </div>
@@ -214,7 +217,7 @@
             <object type="text/html" data="https://ge.globo.com/" id="testeInserir" style="display: none; transition: all .5s ease-out;">
             </object>
 
-            <object type="text/html" data="./painel.php" id="testeInserir02" style="display: block; transition: all .5s ease-out;">
+            <object data="./painel.php" id="testeInserir02" style="display: block; transition: all .5s ease-out;">    
             </object>
 
             <object type="text/html" data="./login.html" id="testeInserir03" style="display: none; transition: all .5s ease-out;"></object>
@@ -227,6 +230,8 @@
             </object>
                 
         </section>
+
+        <script src="assets/js/App.js"></script>
 
         <div class="flex-shrink-0"  id="UsuarioPgMeioProjects" style="display: none;">
                 <div class="aside-header">

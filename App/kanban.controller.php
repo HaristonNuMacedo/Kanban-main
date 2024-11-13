@@ -181,7 +181,7 @@
             $task->__set('taskStatus', 1);
 
             $task->create();
-            header('location: painel.php?refresh');
+            header('location: gerenciadorProjetos.php?refresh');
         }
 
         if($_GET['action'] == 'task-register2'){

@@ -234,15 +234,9 @@
         <script src="assets/js/App.js"></script>
 
         <div id="TelaCRUDTask" onclick="fecharCRUDTask2()"></div>
-        
-        <div class="flex-shrink-0"  id="Pag2UsuarioPgMeioProjects" style="display: none;">
-                <div class="aside-header">
-                    <div class="aside-title-container">
-                        <h2 style="color: #FFF; font-size: 22px; margin-top: 6px;">Adicionar Tarefa</h2>
-                    </div>
-                </div>
-           
-                <div class="aside-body">
+
+        <div class="flex-shrink-0"  id="Pag2UsuarioPgMeioProjects" onclick="manterCRUDTask2()">
+                <div>
                     <form action="kanban.controller.php?action=task-register" method="post">
                         <div class="input-task">
                             <label for="task"></label>
@@ -257,7 +251,7 @@
                         <input type="submit" value="Cadastrar">
                     </form>  
                 </div>
-                <!-- Abertura Lateral direita -->
+            <!-- Abertura Lateral direita -->
         </div>
     </main>
 

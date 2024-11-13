@@ -40,6 +40,14 @@ function fecharCRUDTask2() {
     TaskProFormX.style.display = 'none';
 }
 
+function manterCRUDTask2() {
+    let TaskProFormTela = document.querySelector('#TelaCRUDTask');
+    TaskProFormTela.style.display = 'block';
+
+    let TaskProForm = document.querySelector('#Pag2UsuarioPgMeioProjects');
+    TaskProForm.style.display = 'block';
+}
+
 
 function abrir01() {
     var visaoG = document.querySelector('#visaoGeral')

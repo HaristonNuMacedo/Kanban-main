@@ -236,17 +236,25 @@
         <div id="TelaCRUDTask" onclick="fecharCRUDTask2()"></div>
 
         <div class="flex-shrink-0"  id="Pag2UsuarioPgMeioProjects" onclick="manterCRUDTask2()">
-                <div>
+                <div class="MeioProjects">
+                    <label class="TextAdd">Adicionar Tarefa</label>
                     <form action="kanban.controller.php?action=task-register" method="post">
                         <div class="input-task">
                             <label for="task"></label>
-                            <input name="task" type="text" placeholder="Digite a tarefa">
+                            <input class="task02" name="task" type="text" placeholder="Digite a tarefa">
                         </div>
 
                         <input type="hidden" name="id" value="<?php echo $pId ?>">
 
                         <label for="task-description"></label>
-                        <textarea name="taskDescription" placeholder="Escreva uma descrição"></textarea>
+                        <textarea class="taskDesc02" name="taskDescription" placeholder="Escreva uma descrição"></textarea>
+
+                        <select id="sexo" name="sexo"  data-color3="#fff">
+                            <option>Prioridade: </option>
+                            <option value="m"><i class="fas fa-flag" style="color: red;"></i>Alta </option>
+                            <option value="f"><i class="fas fa-flag" style="color: blue;"></i>Normal </option>
+                            <option value="ind"><i class="fas fa-flag" style="color: grey;"></i>Baixa </option>
+                        </select>
                             
                         <input type="submit" value="Cadastrar">
                     </form>  

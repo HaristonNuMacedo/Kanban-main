@@ -622,3 +622,19 @@ li.current p {
 
 
 
+.TextAdd { 
+  margin: 15px;
+  color: #FFF;
+  font-size: 20px;
+}
+
+input.task02, textarea {
+  width: 400px;
+    margin: 10px auto;
+    border-bottom: 2px solid #609DF9;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+
+

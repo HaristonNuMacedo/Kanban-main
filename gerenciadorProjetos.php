@@ -248,13 +248,23 @@
 
                         <label for="task-description"></label>
                         <textarea class="taskDesc02" name="taskDescription" placeholder="Escreva uma descrição"></textarea>
-
-                        <select id="sexo" name="sexo"  data-color3="#fff">
-                            <option>Prioridade: </option>
-                            <option value="m"><i class="fas fa-flag" style="color: red;"></i>Alta </option>
-                            <option value="f"><i class="fas fa-flag" style="color: blue;"></i>Normal </option>
-                            <option value="ind"><i class="fas fa-flag" style="color: grey;"></i>Baixa </option>
-                        </select>
+                        
+                        <div class="selector">
+                            <div id="selectField">
+                                <p id="selectText"><i id="colorIcon" class="fas fa-flag" style="color: #fff;"></i>Prioridade</p>
+                            </div>
+                            <ul id="list">
+                                <li class="options">
+                                    <p><i class="fas fa-flag" style="color: red;"></i>Alta</p>
+                                </li>
+                                <li class="options">
+                                    <p><i class="fas fa-flag" style="color: blue;"></i>Normal</p>
+                                </li>
+                                <li class="options">
+                                    <p><i class="fas fa-flag" style="color: grey;"></i>Baixa</p>
+                                </li>
+                            </ul>
+                        </div>
                             
                         <input type="submit" value="Cadastrar">
                     </form>  
@@ -264,11 +274,18 @@
     </main>
 
     <script>
-        /*$(document).ready(function () {
-            setTimeout(function () {
-                window.location.reload(1);
-            }, 5000); //tempo em milisegundos. Neste caso, o refresh vai acontecer de 5 em 5 segundos.
-        });*/
+        var selectField = document.getElementById("selectField");
+        var selectText = document.getElementById("selectText");
+        var options = document.getElementsByClassName("options");
+        var colorIcon = document.getElementById("colorIcon");
+        
+        for(option of options) {
+            option.onclick = function() {
+                selectText.innerHTML = this.textContent;  
+            }
+        }
+
+        
     </script>
 
     <script src="./assets/js/functionAbrirPaginacao.js"></script>

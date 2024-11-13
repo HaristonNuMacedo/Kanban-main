@@ -620,7 +620,13 @@ li.current p {
 
 
 
-
+#Pag2UsuarioPgMeioProjects {
+  text-decoration: none;
+  display: none;
+  z-index: 10;
+  padding: 5px;
+  background-image: linear-gradient(#222, #888);
+}
 
 .TextAdd { 
   margin: 15px;
@@ -629,12 +635,63 @@ li.current p {
 }
 
 input.task02, textarea {
-  width: 400px;
+  width: 350px;
     margin: 10px auto;
     border-bottom: 2px solid #609DF9;
     border-radius: 3px;
     padding: 10px;
 }
 
+.selector {
+  width: 300px;
+}
+
+#selectField {
+  height: 40px;
+  width: 100%;
+  padding: 10px 25px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-left: 28px;
+}
+
+#selectField p i {
+  margin-right: 15px;
+}
+
+#list {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 28px;
+  padding: 10px 5px;
+}
+
+.options {
+  width: 100%;
+  padding: 10px 25px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.options p {
+  margin-bottom: 0;
+}
+
+.options:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.options p i {
+  margin-right: 15px;
+}
 
 

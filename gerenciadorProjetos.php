@@ -255,18 +255,18 @@
                             </div>
                             <ul id="list" class="hide">
                                 <li class="options">
-                                    <p><i class="fas fa-flag" style="color: red;"></i>Alta</p>
+                                    <p id="op1"><i class="fas fa-flag" style="color: red;"></i>Alta</p>
                                 </li>
                                 <li class="options">
-                                    <p><i class="fas fa-flag" style="color: blue;"></i>Normal</p>
+                                    <p id="op2"><i class="fas fa-flag" style="color: blue;"></i>Normal</p>
                                 </li>
                                 <li class="options">
-                                    <p><i class="fas fa-flag" style="color: grey;"></i>Baixa</p>
+                                    <p id="op3"><i class="fas fa-flag" style="color: grey;"></i>Baixa</p>
                                 </li>
                             </ul>
                         </div>
                             
-                        <input type="submit" value="Cadastrar">
+                        <input id="insertCadastro" type="submit" value="Cadastrar">
                     </form>  
                 </div>
             <!-- Abertura Lateral direita -->
@@ -277,8 +277,8 @@
         var selectField = document.getElementById("selectField");
         var selectText = document.getElementById("selectText");
         var options = document.getElementsByClassName("options");
-        var colorIcon = document.getElementById("colorIcon");
         var list = document.getElementById("list");
+        $cor = '';
 
         selectField.onclick = function() {
             list.classList.toggle("hide");
@@ -286,10 +286,10 @@
         
         for(option of options) {
             option.onclick = function() {
-                selectText.innerHTML = this.textContent;  
-            }
-        }
-
+                selectText.innerHTML = this.textContent;
+                list.classList.toggle("hide");
+            } 
+        } 
         
     </script>
 

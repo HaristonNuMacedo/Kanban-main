@@ -655,8 +655,9 @@ input.task02, textarea {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
   margin-top: 10px;
-  margin-left: 28px;
+  margin-left: 30px;
   cursor: pointer;
+  z-index: 10;
 }
 
 #selectField p i {
@@ -670,6 +671,7 @@ input.task02, textarea {
   overflow: hidden;
   margin-left: 28px;
   padding: 10px 5px;
+  z-index: 10;
 }
 
 .options {
@@ -697,6 +699,14 @@ input.task02, textarea {
 
 .hide {
   visibility: hidden;
+}
+
+input#insertCadastro {
+  position: absolute;
+  top: 380px; right: 15px;
+  padding: 5px 25px;
+  border-radius: 4px;
+  z-index: 1;
 }
 
 

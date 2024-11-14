@@ -46,16 +46,17 @@
                         <span style="font-size: 14px; font-weight: 700;">Prioridade:</span> <?php echo $task['task_prioridade'] ?>
                     </p>
                     <div class="card-controls">
-                        <a href="task-register.php" ><i class="fas fa-edit" onclick="taskEdit(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
+                        <i class="fas fa-edit" onclick="abrirCRUDproject(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
                         <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>                    
-                        <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=2"><i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>                    
-                        
+                        <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=2"><i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>                        
                     </div>
                 </div>
             <?php } } ?>
             <div class="inserirTask-container">
                 <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
             </div>
+                    
+
             </div>
         </div>
 

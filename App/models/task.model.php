@@ -3,6 +3,7 @@
         private $taskId;
         private $taskName;
         private $taskDescription;
+        private $taskPrioridade;
         private $projectId;
         private $taskStatus;
         private $db;
@@ -12,11 +13,12 @@
         }
 
         public function create(){
-            $sql = "INSERT INTO tasks(task_name, task_description, fk_project_id, task_status) VALUES(:taskName, :taskDescription, :projectId, :taskStatus)";
+            $sql = "INSERT INTO tasks(task_name, task_description, task_prioridade, fk_project_id, task_status) VALUES(:taskName, :taskDescription, :taskPrioridade, :projectId, :taskStatus)";
             
             $stmt = $this->db->prepare($sql);
             $stmt->bindValue(':taskName', $this->taskName);
             $stmt->bindValue(':taskDescription', $this->taskDescription);
+            $stmt->bindValue(':taskPrioridade', $this->taskPrioridade);
             $stmt->bindValue(':projectId', $this->projectId);
             $stmt->bindValue(':taskStatus', $this->taskStatus);
             $stmt->execute();
@@ -30,7 +32,7 @@
         }
 
         public function read(){
-            $sql = "SELECT task_id, task_name, task_description, task_status FROM tasks WHERE fk_project_id = $this->projectId";
+            $sql = "SELECT task_id, task_name, task_description, task_prioridade, task_status FROM tasks WHERE fk_project_id = $this->projectId";
             $stmt = $this->db->prepare($sql);
             $stmt->execute();
             
@@ -40,11 +42,12 @@
 
         public function update($par){
             if($par == 'task'){
-                $sql = "UPDATE tasks SET task_name = :task, task_description = :descr WHERE task_id = $this->taskId";
+                $sql = "UPDATE tasks SET task_name = :task, task_description = :descr, task_prioridade = :priorid WHERE task_id = $this->taskId";
             
                 $stmt = $this->db->prepare($sql);
                 $stmt->bindValue(':task', $this->taskName);
                 $stmt->bindValue(':descr', $this->taskDescription);
+                $stmt->bindValue(':priorid', $this->taskPrioridade);
                 $stmt->execute();
             
             } elseif($par == 'status'){

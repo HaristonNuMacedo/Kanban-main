@@ -251,7 +251,7 @@
                         
                         <div class="selector">
                             <div id="selectField">
-                                <p id="selectText"><i id="colorIcon" class="fas fa-flag" style="color: #fff;"></i>Prioridade</p>
+                                <input id="selectText" name="prioridade" type="text" value="Prioridade">
                             </div>
                             <ul id="list" class="hide">
                                 <li class="options">
@@ -278,7 +278,6 @@
         var selectText = document.getElementById("selectText");
         var options = document.getElementsByClassName("options");
         var list = document.getElementById("list");
-        $cor = '';
 
         selectField.onclick = function() {
             list.classList.toggle("hide");
@@ -286,8 +285,9 @@
         
         for(option of options) {
             option.onclick = function() {
-                selectText.innerHTML = this.textContent;
-                list.classList.toggle("hide");
+                const espaco = this.textContent;
+                const taskPrioridd = espaco.trim();
+                selectText.value = taskPrioridd;
             } 
         } 
         

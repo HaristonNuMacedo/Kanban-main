@@ -652,7 +652,7 @@ input.task02, textarea {
   padding: 10px 25px;
   margin-bottom: 5px;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.7);
+  background: #ccc;
   border-radius: 6px;
   margin-top: 10px;
   margin-left: 30px;
@@ -660,8 +660,9 @@ input.task02, textarea {
   z-index: 10;
 }
 
-#selectField p i {
+#selectField input {
   margin-right: 15px;
+  background: #ccc;
 }
 
 #list {

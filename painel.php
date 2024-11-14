@@ -40,7 +40,10 @@
                 <div class="card-item id<?php echo $task['task_id'] ?>">
                     <h2><?php echo $task['task_name'] ?></h2>
                     <p>
-                        <?php echo $task['task_description'] ?>
+                    <span style="font-size: 14px; font-weight: 700;">Descrição:</span> <?php echo $task['task_description'] ?>
+                    </p>
+                    <p style="color: green;">
+                        <span style="font-size: 14px; font-weight: 700;">Prioridade:</span> <?php echo $task['task_prioridade'] ?>
                     </p>
                     <div class="card-controls">
                         <i class="fas fa-edit" onclick="taskEdit(<?php echo $task['task_id'] ?>)" style="cursor: pointer;"></i>

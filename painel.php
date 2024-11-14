@@ -46,7 +46,7 @@
                         <span style="font-size: 14px; font-weight: 700;">Prioridade:</span> <?php echo $task['task_prioridade'] ?>
                     </p>
                     <div class="card-controls">
-                        <i class="fas fa-edit" onclick="abrirCRUDproject(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
+                        <i class="fas fa-edit" onclick="editTaaskForm(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
                         <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>                    
                         <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=2"><i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>                        
                     </div>
@@ -58,6 +58,30 @@
                     
 
             </div>
+            <script> function editTaaskForm() {
+                let TaskProFormTela = document.querySelector('#TelaCRUDTask');
+                TaskProFormTela.style.display = 'block';
+
+                let TaskProForm = document.querySelector('#Pag2UsuarioPgMeioProjects');
+                TaskProForm.style.display = 'block';
+            }
+
+            function fecharCRUDTask2() {
+                let TaskfecharTela = document.querySelector('#TelaCRUDTask');
+                TaskfecharTela.style.display = 'none';
+
+                let TaskProFormX = document.querySelector('#Pag2UsuarioPgMeioProjects');
+                TaskProFormX.style.display = 'none';
+            }
+
+            function manterCRUDTask2() {
+                let TaskProFormTela = document.querySelector('#TelaCRUDTask');
+                TaskProFormTela.style.display = 'block';
+
+                let TaskProForm = document.querySelector('#Pag2UsuarioPgMeioProjects');
+                TaskProForm.style.display = 'block';
+            }
+            </script>
         </div>
 
     <?php break; } } } }?>

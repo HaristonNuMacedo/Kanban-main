@@ -16,10 +16,18 @@
        position: relative; 
     }
 
+    p {
+        position: absolute;
+        top: 36%;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(16, 36, 138, 0.7);
+    }
+
     #loader {
         position: absolute;
         top: 45%;
-        border: 8px solid #d3d3d3;
+        border: 8px solid #ddd;
         border-radius: 50%;
         border-top: 8px solid #00b2f0;
         width: 60px;
@@ -41,7 +49,7 @@
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
-
+<p>Salvando...</p>
 <div id="loader"></div>
 
 <script>

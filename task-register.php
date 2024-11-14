@@ -2,7 +2,7 @@
 
 <section class="cards-container">
 
-    <div class="task-register">
+    <div class="task-register" id="task001">
         <h3>Adicione uma nova tarefa</h3>
         <form action="kanban.controller.php?action=task-register2" method="post">
             <div class="input-task">

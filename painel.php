@@ -46,8 +46,8 @@
                         <span style="font-size: 14px; font-weight: 700;">Prioridade:</span> <?php echo $task['task_prioridade'] ?>
                     </p>
                     <div class="card-controls">
-                        <i class="fas fa-edit" onclick="taskEdit(<?php echo $task['task_id'] ?>)" style="cursor: pointer;"></i>
-                        <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt"></i></a>                    
+                        <a href="task-register.php" ><i class="fas fa-edit" onclick="taskEdit(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
+                        <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>                    
                         <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=2"><i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>                    
                         
                     </div>
@@ -105,7 +105,7 @@
                             <?php echo $task['task_description'] ?>
                         </p>
                         <div class="card-controls">
-                        <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=3"><i class="fas fa-check"></i></a> 
+                        <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=3"><i class="fas fa-check" style="color: green;"></i></a> 
                             
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                     <?php echo $task['task_description'] ?>
                 </p>
                 <div class="card-controls">
-                    <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt"></i></a>
+                    <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                 </div>
             </div>
             <?php } } ?> 

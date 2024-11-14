@@ -209,6 +209,7 @@
             $task->__set('taskId', $_POST['id']);
             $task->__set('taskName', $_POST['task']);
             $task->__set('taskDescription', $_POST['description']);
+            $task->__set('taskPrioridade', $_POST['prioridade']);
 
             $task->update('task');
             header('location: painel.php');

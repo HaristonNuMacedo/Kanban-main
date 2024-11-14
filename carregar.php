@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #0e1538;
+        background-color: #fff;
     }
 
     label {
@@ -19,7 +19,7 @@
     #loader {
         position: absolute;
         top: 45%;
-        border: 8px solid #f3f3f3;
+        border: 8px solid #d3d3d3;
         border-radius: 50%;
         border-top: 8px solid #00b2f0;
         width: 60px;

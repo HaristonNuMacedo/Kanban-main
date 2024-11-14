@@ -70,7 +70,13 @@ function editProjectName(id){
 }
 
 //edita a tarefa
-function taskEdit(id){
+/*function taskEdit(id) {
+    //alert(id);
+    window.location.href = "task-register.php";
+}
+
+
+function taskEditxxx(id){
     let cardItem = document.querySelector('.id'+id);
     let name = document.querySelector('.id'+id +' h2').innerHTML
     let descr = document.querySelector('.id'+id +' p').innerHTML
@@ -88,6 +94,8 @@ function taskEdit(id){
     inputName.placeholder = 'Edite o nome da tarefa';
     inputName.value = name;
     inputName.name = 'task';
+
+    let priordade = document.getElementById('');
 
     let textarea = document.createElement('textarea');
     textarea.className = 'taskedit-textarea';
@@ -113,4 +121,4 @@ function taskEdit(id){
     form.appendChild(btn);
 
     cardItem.insertBefore(form, cardItem[0]);
-}
+} */

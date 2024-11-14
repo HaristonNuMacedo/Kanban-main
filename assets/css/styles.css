@@ -591,36 +591,50 @@ section.main-login {
   }
   
   #list {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.7);
+    width: 300px;
+    background: #ccc;
     border-radius: 6px;
     overflow: hidden;
-    margin-left: 28px;
     padding: 10px 5px;
     z-index: 10;
+    margin-left: 50px;
+    position: fixed;
   }
   
+
   .options {
     width: 100%;
-    padding: 10px 25px;
+    padding: 10px 15px;
     list-style: none;
     cursor: pointer;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 2px;
     padding-bottom: 8px;
+    margin-bottom: 2px;
     position: relative;
+    color: #000;
+  }
+
+  #opx {
+    border-left: 8px solid red;
+  }
+  #op1 {
+    border-left: 8px solid yellow;
+  }
+  #op2 {
+    border-left: 8px solid blue;
+  }
+  #op3 {
+    border-left: 8px solid green;
   }
   
   .options p {
     margin-bottom: 0;
+    color: #000;
   }
   
   .options:hover {
     background: rgba(255, 255, 255, 0.7);
-  }
-  
-  .options p i {
-    margin-right: 15px;
   }
   
   .hide {

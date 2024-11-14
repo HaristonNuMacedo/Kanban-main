@@ -99,23 +99,27 @@ function taskEdit(id){
     textarea.name = 'description';
 
     var prioridadeSelect = document.createElement("SELECT");
+    prioridadeSelect.name = 'prioridade';
     prioridadeSelect.setAttribute("id", "mySelect");
     document.body.appendChild(prioridadeSelect);
 
     var zprimary = document.createElement("option");
+    var a = document.createElement("option");
     var z = document.createElement("option");
     var ze = document.createElement("option");
     var zcu = document.createElement("option");
     zprimary.setAttribute("value", "volvocar");
 
     var tprimary = document.createTextNode(priord);
+    var ab = document.createTextNode("Urgente");
     var t = document.createTextNode("Alta");
     var te = document.createTextNode("Normal");
     var tcu = document.createTextNode("Baixa");
-    zprimary.appendChild(tprimary)
+    zprimary.appendChild(tprimary); a.appendChild(ab);
     z.appendChild(t); ze.appendChild(te); zcu.appendChild(tcu);
 
     document.getElementById("mySelect").appendChild(zprimary);
+    document.getElementById("mySelect").appendChild(a);
     document.getElementById("mySelect").appendChild(z);
     document.getElementById("mySelect").appendChild(ze);
     document.getElementById("mySelect").appendChild(zcu);

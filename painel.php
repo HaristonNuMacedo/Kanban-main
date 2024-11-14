@@ -42,7 +42,7 @@
                         <p><?php echo $task['task_description'] ?></p>
                     <div style="display:inline-flex; margin-top: 5px;">
                         <span2 style="font-size: 14px; font-weight: 700; top: 3px;">Prioridade:</span2>
-                        <p2 style="font-size: 13px; color: green; margin-left: 8px; position:relative; top: -5px"><?php echo $task['task_prioridade'] ?></p2>
+                        <p2 style="font-size: 13px; margin-left: 8px; position:relative; top: -4px"><?php echo $task['task_prioridade'] ?></p2>
                     </div>
                     <div class="card-controls">
                         <i class="fas fa-edit" onclick="taskEdit(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
@@ -102,6 +102,10 @@
                         <p>
                             <?php echo $task['task_description'] ?>
                         </p>
+                        <div style="display:inline-flex; margin-top: 5px;">
+                            <span2 style="font-size: 14px; font-weight: 700; top: 3px;">Prioridade:</span2>
+                            <p2 style="font-size: 13px; margin-left: 8px; position:relative; top: -4px"><?php echo $task['task_prioridade'] ?></p2>
+                        </div>
                         <div class="card-controls">
                         <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=3"><i class="fas fa-check" style="color: green;"></i></a> 
                             

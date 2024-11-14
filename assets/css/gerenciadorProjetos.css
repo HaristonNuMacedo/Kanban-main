@@ -671,12 +671,13 @@ input.task02, textarea {
 
 #list {
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: #ccc;
   border-radius: 6px;
   overflow: hidden;
   margin-left: 28px;
   padding: 10px 5px;
   z-index: 10;
+  position: fixed;
 }
 
 .options {

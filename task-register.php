@@ -21,10 +21,13 @@
                 </div>
                 <ul id="list" class="hide">
                     <li class="options">
-                        <p id="op1"><i class="fas fa-flag" style="color: red;"></i>Alta</p>
+                        <p id="opx"><i class="fas fa-flag" style="color: red;"></i>Urgente</p>
                     </li>
                     <li class="options">
-                        <p id="op2"><i class="fas fa-flag" style="color: blue;"></i>Normal</p>
+                        <p id="op1"><i class="fas fa-flag" style="color: yellow;"></i>Alta</p>
+                    </li>
+                    <li class="options">
+                        <p id="op2"><i class="fas fa-flag" style="color: green;"></i>Normal</p>
                     </li>
                     <li class="options">
                         <p id="op3"><i class="fas fa-flag" style="color: grey;"></i>Baixa</p>
@@ -52,6 +55,7 @@
                 const espaco = this.textContent;
                 const taskPrioridd = espaco.trim();
                 selectText.value = taskPrioridd;
+                list.classList.toggle("hide");
             } 
         } 
         

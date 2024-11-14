@@ -38,15 +38,15 @@
                 if($task['task_status'] == 1){
             ?>
                 <div class="card-item id<?php echo $task['task_id'] ?>">
-                    <h2><?php echo $task['task_name'] ?></h2>
-                    <p>
-                    <span style="font-size: 14px; font-weight: 700;">Descrição:</span> <?php echo $task['task_description'] ?>
-                    </p>
-                    <p style="color: green;">
-                        <span style="font-size: 14px; font-weight: 700;">Prioridade:</span> <?php echo $task['task_prioridade'] ?>
-                    </p>
+                    <h2 style="margin-bottom: 5px"><?php echo $task['task_name'] ?></h2>
+                    <span1 style="font-size: 14px; font-weight: 700; display:inline-flex;">Descrição:</span1> 
+                        <p><?php echo $task['task_description'] ?></p>
+                    <div style="display:inline-flex; margin-top: 5px;">
+                        <span2 style="font-size: 14px; font-weight: 700; top: 3px;">Prioridade:</span2>
+                        <p style="color: green; margin-left: 8px; position:relative; top: -4px"><?php echo $task['task_prioridade'] ?></p>
+                    </div>
                     <div class="card-controls">
-                        <i class="fas fa-edit" onclick="editTaaskForm(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
+                        <i class="fas fa-edit" onclick="taskEdit(<?php echo $task['task_id'] ?>)" style="cursor: pointer; color: blue;"></i>
                         <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>                    
                         <a href="kanban.controller.php?action=moveto&id=<?php echo $task['task_id']; ?>&status=2"><i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>                        
                     </div>
@@ -55,33 +55,7 @@
             <div class="inserirTask-container">
                 <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
             </div>
-                    
-
-            </div>
-            <script> function editTaaskForm() {
-                let TaskProFormTela = document.querySelector('#TelaCRUDTask');
-                TaskProFormTela.style.display = 'block';
-
-                let TaskProForm = document.querySelector('#Pag2UsuarioPgMeioProjects');
-                TaskProForm.style.display = 'block';
-            }
-
-            function fecharCRUDTask2() {
-                let TaskfecharTela = document.querySelector('#TelaCRUDTask');
-                TaskfecharTela.style.display = 'none';
-
-                let TaskProFormX = document.querySelector('#Pag2UsuarioPgMeioProjects');
-                TaskProFormX.style.display = 'none';
-            }
-
-            function manterCRUDTask2() {
-                let TaskProFormTela = document.querySelector('#TelaCRUDTask');
-                TaskProFormTela.style.display = 'block';
-
-                let TaskProForm = document.querySelector('#Pag2UsuarioPgMeioProjects');
-                TaskProForm.style.display = 'block';
-            }
-            </script>
+        </div>
         </div>
 
     <?php break; } } } }?>
@@ -141,9 +115,11 @@
             </div>
         </div>
     <?php break; } } } }?>
+
     <!-- /card em andamento-->
 
     <!-- card conluído -->
+
     <?php if($count3 == 0){
     ?>
         <div class="card">

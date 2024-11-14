@@ -14,10 +14,47 @@
 
             <label for="task-description"></label>
             <textarea name="taskDescription" placeholder="Escreva uma descrição"></textarea>
+
+            <div class="selector">
+                <div id="selectField">
+                    <input id="selectText" name="prioridade" type="text" value="Prioridade">
+                </div>
+                <ul id="list" class="hide">
+                    <li class="options">
+                        <p id="op1"><i class="fas fa-flag" style="color: red;"></i>Alta</p>
+                    </li>
+                    <li class="options">
+                        <p id="op2"><i class="fas fa-flag" style="color: blue;"></i>Normal</p>
+                    </li>
+                    <li class="options">
+                        <p id="op3"><i class="fas fa-flag" style="color: grey;"></i>Baixa</p>
+                    </li>
+                </ul>
+            </div>
             
             <input type="submit" value="Cadastrar">
         </form>
     </div>
+
+    <script>
+        var selectField = document.getElementById("selectField");
+        var selectText = document.getElementById("selectText");
+        var options = document.getElementsByClassName("options");
+        var list = document.getElementById("list");
+
+        selectField.onclick = function() {
+            list.classList.toggle("hide");
+        }
+        
+        for(option of options) {
+            option.onclick = function() {
+                const espaco = this.textContent;
+                const taskPrioridd = espaco.trim();
+                selectText.value = taskPrioridd;
+            } 
+        } 
+        
+    </script>
 
 </section>
 

@@ -551,6 +551,83 @@ section.main-login {
 
 
 
+
+
+/*=======================
+    SELECT PRIORIDADE
+=========================*/
+.selector {
+    width: 300px;
+  }
+  
+  #selectField {
+    height: 40px;
+    width: 100%;
+    padding: 10px 25px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background: #ccc;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  #selectField input {
+    margin-right: 15px;
+    background: #ccc;
+    color: #000;
+  }
+  
+  #list {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 28px;
+    padding: 10px 5px;
+    z-index: 10;
+  }
+  
+  .options {
+    width: 100%;
+    padding: 10px 25px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-bottom: 8px;
+    position: relative;
+  }
+  
+  .options p {
+    margin-bottom: 0;
+  }
+  
+  .options:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  
+  .options p i {
+    margin-right: 15px;
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  input#insertCadastro {
+    position: absolute;
+    top: 380px; right: 15px;
+    padding: 5px 25px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+
+
+
 /*=============== 
  Mobile
 ===============*/

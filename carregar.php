@@ -48,12 +48,12 @@
     var myVar;
     
     function myFunction() {
-      myVar = setTimeout(showPage, 1000);
+      myVar = setTimeout(showPage, 500);
     }
     
     function showPage() {
       document.getElementById("loader").style.display = "none";
-      window.location.href = "gerenciadorProjetos.php";
+      window.location.href = "painel.php";
     }
 </script>
 

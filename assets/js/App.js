@@ -77,7 +77,7 @@ function taskEdit(id){
     let name = document.querySelector('.id'+id +' h2').innerHTML
     let descr = document.querySelector('.id'+id +' p').innerHTML
     descr = descr.trim();
-    let priord = document.querySelector('.id'+id +' p').innerHTML
+    let priord = document.querySelector('.id'+id +' p2').innerHTML
     cardItem.innerHTML = '';
 
     let form = document.createElement('form');
@@ -98,7 +98,27 @@ function taskEdit(id){
     textarea.value = descr;
     textarea.name = 'description';
 
-    let prioridadeTask = document.createElement('select');
+    var prioridadeSelect = document.createElement("SELECT");
+    prioridadeSelect.setAttribute("id", "mySelect");
+    document.body.appendChild(prioridadeSelect);
+
+    var zprimary = document.createElement("option");
+    var z = document.createElement("option");
+    var ze = document.createElement("option");
+    var zcu = document.createElement("option");
+    zprimary.setAttribute("value", "volvocar");
+
+    var tprimary = document.createTextNode(priord);
+    var t = document.createTextNode("Alta");
+    var te = document.createTextNode("Normal");
+    var tcu = document.createTextNode("Baixa");
+    zprimary.appendChild(tprimary)
+    z.appendChild(t); ze.appendChild(te); zcu.appendChild(tcu);
+
+    document.getElementById("mySelect").appendChild(zprimary);
+    document.getElementById("mySelect").appendChild(z);
+    document.getElementById("mySelect").appendChild(ze);
+    document.getElementById("mySelect").appendChild(zcu);
 
     let ocult = document.createElement('input')
     ocult.type = 'text';
@@ -114,6 +134,7 @@ function taskEdit(id){
 
     form.appendChild(inputName);
     form.appendChild(textarea);
+    form.appendChild(prioridadeSelect);
     form.appendChild(ocult);
     form.appendChild(btn);
 

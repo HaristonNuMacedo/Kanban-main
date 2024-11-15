@@ -35,7 +35,7 @@
                 </ul>
             </div>
             
-            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Cadastrar" style="margin-top: 15px;">
         </form>
     </div>
 

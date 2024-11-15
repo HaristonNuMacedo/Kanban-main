@@ -6,7 +6,7 @@
     }
 
     if(isset($_GET['refresh'])){
-        header('location: gerenciadorProjetos.php');
+        header('location: gerenciadorProjetos.php#');
     }
 
     $total = $_SESSION['total']; 
@@ -220,13 +220,13 @@
             <object data="./painel.php" id="testeInserir02" style="display: block; transition: all .5s ease-out;">    
             </object>
 
-            <object type="text/html" data="./login.html" id="testeInserir03" style="display: none; transition: all .5s ease-out;"></object>
+            <object type="text/html" data="./carregarLista.php" id="testeInserir03" style="display: none; transition: all .5s ease-out;">
             </object>
 
-            <object type="text/html" data="./gerenciadorPaginas/selectable.html" id="testeInserir04" style="display: none; transition: all .5s ease-out;"></object>
+            <object type="text/html" data="./gerenciadorPaginas/selectable.html" id="testeInserir04" style="display: none; transition: all .5s ease-out;">
             </object>
 
-            <object type="text/html" data="./sobreOlkaha.html" id="testeInserir05" style="display: none; transition: all .5s ease-out;"></object>
+            <object type="text/html" data="./sobreOlkaha.html" id="testeInserir05" style="display: none; transition: all .5s ease-out;">
             </object>
                 
         </section>

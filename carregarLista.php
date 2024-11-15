@@ -49,7 +49,7 @@
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
-<p>Salvando...</p>
+<p>Carregando...</p>
 <div id="loader"></div>
 
 <script>

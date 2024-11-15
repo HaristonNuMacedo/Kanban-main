@@ -2,7 +2,7 @@
     require 'kanban.controller.php';
 
     if(isset($_GET['refresh'])){
-        header('location: carregarLista.php');
+        header('location: gerenciadorLista.php');
     }
 
     $total = $_SESSION['user_id']; 
@@ -40,9 +40,6 @@
                     <p style="font-size: 16px; color: #555"></p>
                 </div>  
             </div>
-            <div class="inserirTask-container">
-                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
-            </div>
         </div>
         
     <?php } else { ?>
@@ -70,9 +67,6 @@
                     </div>
                 </div>
             <?php } } ?>
-            <div class="inserirTask-container">
-                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
-            </div>
         </div>
         </div>
 
@@ -145,9 +139,6 @@
                     <p style="font-size: 16px; color: #555"></p>
                 </div>  
             </div>
-            <div class="inserirTask-container3">
-                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
-            </div>
         </div>
 
     <?php } else { ?>
@@ -175,9 +166,6 @@
                 </div>
             </div>
             <?php } } ?> 
-            <div class="inserirTask-container3">
-                <a href="task-register.php"><input type="button" value="Adicionar Tarefa &#43"></a>
-            </div>
         </div>
     </div>
     <?php break; } } } }?>

@@ -696,16 +696,16 @@ input.task02, textarea {
 }
 
 #opx {
-  border-left: 8px solid red;
+  border-left: 8px solid #ff0000;
 }
 #op1 {
-  border-left: 8px solid yellow;
+  border-left: 8px solid #c0c000;
 }
 #op2 {
-  border-left: 8px solid blue;
+  border-left: 8px solid #0000ff;
 }
 #op3 {
-  border-left: 8px solid green;
+  border-left: 8px solid #008000;
 }
 
 .options p {

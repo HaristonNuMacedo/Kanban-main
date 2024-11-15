@@ -161,9 +161,6 @@
                 <p>
                     <?php echo $task['task_description'] ?>
                 </p>
-                <div class="card-controls">
-                    <a href="kanban.controller.php?action=deletetask&id=<?php echo $task['task_id']; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
-                </div>
             </div>
             <?php } } ?> 
         </div>

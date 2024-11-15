@@ -255,16 +255,16 @@
                             </div>
                             <ul id="list" class="hide">
                                 <li class="options" id="opx">
-                                    <p id="opxText"></i>1 - Urgente</p>
+                                    <p id="opxText"></i>Urgente</p>
                                 </li>
                                 <li class="options" id="op1">
-                                    <p id="op1Text">2 - Alta</p>
+                                    <p id="op1Text">Alta</p>
                                 </li>
                                 <li class="options" id="op2">
-                                    <p id="op2Text"></i>3 - Normal</p>
+                                    <p id="op2Text"></i>Normal</p>
                                 </li>
                                 <li class="options" id="op3">
-                                    <p id="op3Text"></i>4 - Baixa</p>
+                                    <p id="op3Text"></i>Baixa</p>
                                 </li>
                             </ul>
                         </div>

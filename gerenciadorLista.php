@@ -50,7 +50,8 @@
     ?>
         <div class="card">
             <div class="card-header-1">
-                <div class="btnV"><i class="fas fa-sort-down"></i></div>
+                <div class="btnV" onclick="fecharLista()"><i class="fas fa-sort-down"></i></div>
+                <div class="btnV2" onclick="abrirLista()"><i class="fas fa-sort-down"></i></div>
                 <p class="txtPendente"><i class="fas fa-thumbtack"></i>Pendente </p>
                 <p><?php echo $count1 ?> &nbsp</p>
             </div>
@@ -100,6 +101,8 @@
         ?>
         <div class="card">
             <div class="card-header">
+                <div class="btnEA" onclick="fecharLista2()"><i class="fas fa-sort-down"></i></div>
+                <div class="btnEA2" onclick="abrirLista2()"><i class="fas fa-sort-down"></i></div>
                 <p><i class="fas fa-clock"></i></i>Em andamento </p>
                 <p><?php echo $count2 ?> &nbsp</p>
             </div>

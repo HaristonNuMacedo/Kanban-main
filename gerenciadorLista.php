@@ -161,6 +161,10 @@
                 <p>
                     <?php echo $task['task_description'] ?>
                 </p>
+                <div style="display:inline-flex; margin-top: 5px;">
+                    <span2 style="font-size: 14px; font-weight: 700; top: 3px;">Prioridade:</span2>
+                    <p2 style="font-size: 13px; margin-left: 8px; position:relative; top: -4px"><?php echo $task['task_prioridade'] ?></p2>
+                </div>
             </div>
             <?php } } ?> 
         </div>

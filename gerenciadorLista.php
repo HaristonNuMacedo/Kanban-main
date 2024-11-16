@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/stylescarregarlista.css">
     <script src="../js/App.js" defer></script>
+    <script src="./assets/js/functionLista.js" defer></script>
     <title>Kanban Board</title>
 </head>
 <body>
@@ -49,7 +50,8 @@
     ?>
         <div class="card">
             <div class="card-header-1">
-                <p><i class="fas fa-thumbtack"></i>Pendente </p>
+                <div class="btnV"><i class="fas fa-sort-down"></i></div>
+                <p class="txtPendente"><i class="fas fa-thumbtack"></i>Pendente </p>
                 <p><?php echo $count1 ?> &nbsp</p>
             </div>
             

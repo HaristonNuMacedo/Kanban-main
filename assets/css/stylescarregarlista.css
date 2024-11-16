@@ -262,6 +262,17 @@ section.cards-container{
     margin-right: 10px;
 }
 
+.btnV {
+    position: relative;
+    left: -32px;
+    bottom: 2px;
+}
+
+.card-header-1 .txtPendente{
+    position: relative;
+    left: -57px;
+}
+
 .card-body{
     background-color: #fff;
     padding: 10px;

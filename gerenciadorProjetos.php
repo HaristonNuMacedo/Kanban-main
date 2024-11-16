@@ -168,7 +168,7 @@
                                     <div class="btn-container">
                                         <a onclick="editProjectName(<?php echo $pId?>)"><i class="fas fa-pen" ></i><label>Editar projeto</label></a>
                                         <a href="kanban.controller.php?action=deleteProject&id=<?php echo $pId;?>"><i class="fas fa-trash"></i><label style="margin-left: 7px;">Excluir projeto</label></a>
-                                        <a href="task-register.php"><input type="button" value="Adicionar Tarefa +"></a>
+                                        <a href="#" onclick="addsTaaskForm()"><input type="button" value="Adicionar Tarefa +"></a>
                                         <div class="BtnSalvar02"><input type="button" value="Salvar" onclick="fecharCRUDproject2()"></div>
                                     </div>           
                                 </div>

@@ -103,7 +103,7 @@
             <div class="card-header">
                 <div class="btnEA" onclick="fecharLista2()"><i class="fas fa-sort-down"></i></div>
                 <div class="btnEA2" onclick="abrirLista2()"><i class="fas fa-sort-down"></i></div>
-                <p><i class="fas fa-clock"></i></i>Em andamento </p>
+                <p class="txtPendente2"><i class="fas fa-clock"></i></i>Em andamento </p>
                 <p><?php echo $count2 ?> &nbsp</p>
             </div>
             
@@ -153,7 +153,9 @@
         ?>
     <div class="card">
         <div class="card-header-3">
-            <p><i class="fas fa-check-circle"></i>Concluído </p>
+            <div class="btnC" onclick="fecharLista3()"><i class="fas fa-sort-down"></i></div>
+            <div class="btnC2" onclick="abrirLista3()"><i class="fas fa-sort-down"></i></div>
+            <p class="txtPendente3"><i class="fas fa-check-circle"></i>Concluído </p>
             <p><?php echo $count3 ?> &nbsp</p>
         </div>
 

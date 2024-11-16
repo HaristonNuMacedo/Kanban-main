@@ -273,12 +273,14 @@ section.cards-container{
     position: relative;
     left: -32px;
     bottom: 2px;
+    cursor: pointer;
 }
 
 .btnEA {
     position: relative;
     left: -32px;
     bottom: 2px;
+    cursor: pointer;
 }
 
 .btnV2 {
@@ -288,6 +290,7 @@ section.cards-container{
     transition: 1s;
     transform: rotate(270deg);
     display: none;
+    cursor: pointer;
 }
 
 .btnEA2 {
@@ -298,15 +301,44 @@ section.cards-container{
     transform: rotate(270deg);
     color: #000;
     display: none;
+    cursor: pointer;
 }
 
-.btnEA i, .btnEA2 i {
+.btnC {
+    position: relative;
+    left: -34px;
+    bottom: 4px;
+    cursor: pointer;
+}
+
+.btnC2 {
+    position: relative;
+    left: -34px;
+    bottom: 4px;
+    transition: 1s;
+    transform: rotate(270deg);
+    color: #000;
+    display: none;
+    cursor: pointer;
+}
+
+.btnEA i, .btnEA2 i, .btnC i, .btnC2 i {
     color: #000;
 }
 
 .card-header-1 .txtPendente{
     position: relative;
     left: -57px;
+}
+
+.card-header .txtPendente2{
+    position: relative;
+    left: -34px;
+}
+
+.card-header-3 .txtPendente3{
+    position: relative;
+    left: -54px;
 }
 
 .card-body{

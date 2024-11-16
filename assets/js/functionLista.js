@@ -43,3 +43,26 @@ function abrirLista2() {
     let abrirPROicon = document.querySelector('.btnEA2');
     abrirPROicon.style.display = 'none';
 }
+
+function fecharLista3() {
+    let fecharListaPRO = document.querySelector('.card-body-3');
+    fecharListaPRO.style.display = 'none';
+
+    let fecharListaPROicon = document.querySelector('.btnC');
+    fecharListaPROicon.style.display = 'none';
+
+    let abrirPROicon = document.querySelector('.btnC2');
+    abrirPROicon.style.display = 'block';
+}
+
+function abrirLista3() {
+    let fecharListaPRO = document.querySelector('.card-body-3');
+    fecharListaPRO.style.display = 'block';
+
+    let fecharListaPROicon = document.querySelector('.btnC');
+    fecharListaPROicon.style.display = 'block';
+
+    let abrirPROicon = document.querySelector('.btnC2');
+    abrirPROicon.style.display = 'none';
+}
+

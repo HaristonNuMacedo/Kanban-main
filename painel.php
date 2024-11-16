@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body-1">
-            <div class="card-item">
+            <div class="card-itemZero">
                     <p style="font-size: 16px; color: #555"></p>
                 </div>  
             </div>
@@ -80,7 +80,7 @@
         </div>
 
         <div class="card-body">
-            <div class="card-item">
+            <div class="card-itemZero">
                     <p style="font-size: 16px; color: #555;"></p>
                 </div>  
             </div>
@@ -140,7 +140,7 @@
         </div>
     
         <div class="card-body-3">
-            <div class="card-item">
+            <div class="card-itemZero">
                     <p style="font-size: 16px; color: #555"></p>
                 </div>  
             </div>

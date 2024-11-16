@@ -124,7 +124,6 @@ function abrir02() {
 }
 
 function abrir03() {
-
     var visaoG03 = document.querySelector('#visaoGeral03')
     visaoG03.style.background = "#00b2f0";
     visaoG03.style.color = "#000";

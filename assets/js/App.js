@@ -108,7 +108,7 @@ function taskEdit(id){
     var z = document.createElement("option");
     var ze = document.createElement("option");
     var zcu = document.createElement("option");
-    zprimary.setAttribute("value", "");
+    zprimary.setAttribute("value", priord);
 
     var tprimary = document.createTextNode(priord);
     var ab = document.createTextNode("Urgente");

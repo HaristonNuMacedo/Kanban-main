@@ -217,7 +217,7 @@
             <object type="text/html" data="https://ge.globo.com/" id="testeInserir" style="display: none; transition: all .5s ease-out;">
             </object>
 
-            <object data="./painel.php" id="testeInserir02" style="display: block; transition: all .5s ease-out;">    
+            <object data="./carregarKanban.php" id="testeInserir02" style="display: block; transition: all .5s ease-out;">    
             </object>
 
             <object type="text/html" data="./carregarLista.php" id="testeInserir03" style="display: none; transition: all .5s ease-out;">

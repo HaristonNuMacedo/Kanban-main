@@ -70,7 +70,7 @@
                     </div>
                 </div>
             <?php } } ?>
-        </div>
+            </div>
         </div>
 
     <?php break; } } } }?>

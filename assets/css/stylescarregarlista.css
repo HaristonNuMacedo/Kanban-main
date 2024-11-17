@@ -373,6 +373,7 @@ section.cards-container{
 .card-item{
     border-bottom: 1px solid #aaa;
     padding: 10px 0;
+    display: flex;
 }
 
 .card-item:last-child{

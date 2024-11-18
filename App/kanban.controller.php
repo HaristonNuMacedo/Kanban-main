@@ -177,6 +177,7 @@
             $task->__set('db', $db->connect());
             $task->__set('taskName', $_POST['task']);
             $task->__set('taskDescription', $_POST['taskDescription']);
+            $task->__set('dataTask', $_POST['dataTask']);
             $task->__set('taskPrioridade', $_POST['prioridade']);
             $task->__set('projectId', $_POST['id']);
             $task->__set('taskStatus', 1);
@@ -192,6 +193,7 @@
             $task->__set('db', $db->connect());
             $task->__set('taskName', $_POST['task']);
             $task->__set('taskDescription', $_POST['taskDescription']);
+            $task->__set('dataTask', $_POST['dataTask']);
             $task->__set('taskPrioridade', $_POST['prioridade']);
             $task->__set('projectId', $_POST['id']);
             $task->__set('taskStatus', 1);
@@ -209,6 +211,7 @@
             $task->__set('taskId', $_POST['id']);
             $task->__set('taskName', $_POST['task']);
             $task->__set('taskDescription', $_POST['description']);
+            $task->__set('dataTask', $_POST['dataTask']);
             $task->__set('taskPrioridade', $_POST['prioridade']);
 
             $task->update('task');

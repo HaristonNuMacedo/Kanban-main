@@ -39,7 +39,11 @@
             ?>
                 <div class="card-item id<?php echo $task['task_id'] ?>">
                     <h2 style="margin-bottom: 5px"><?php echo $task['task_name'] ?></h2>
-                        <p><?php echo $task['task_description'] ?></p>
+                        <p><?php echo $task['task_description'] ?></p> 
+                        <div class="dataReader"><i class="far fa-calendar"></i>
+                            <?php 
+                            echo date('d/m/y', strtotime($task['dataTask'])); ?>
+                        </div>
                     <div style="display:inline-flex; margin-top: 5px;">
                         <span2 style="font-size: 14px; font-weight: 700; top: 3px;"><i class="fas fa-flag" 
                         <?php $task['task_prioridade'] ;

@@ -66,7 +66,7 @@
     <main class="d-flex flex-nowrap">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; border-right: 1px solid white;" id="lateralGerenciador">
         <?php
-            $pName = 'Nenhum projeto selecionado';
+            $pName = 'Nenhum projeto';
                 foreach($projArray as $project){
                     if($project['project_status'] == 1){
                         $pName = $project['project_name'];
@@ -161,8 +161,7 @@
                                 </a>
                                 <div id="tresPontos" onclick="abrirCRUDproject()"><label>...</label></div>
 
-                                <?php } ?>
-
+                            
                             <div id="TelaCRUD" onclick="fecharCRUDproject()"></div>
                                 <div id="CRUDproject" >
                                     <div class="btn-container">
@@ -172,6 +171,8 @@
                                         <div class="BtnSalvar02"><input type="button" value="Salvar" onclick="fecharCRUDproject2()"></div>
                                     </div>           
                                 </div>
+
+                                <?php } ?>
                         </ul>
                     <!-- /sidebar body -->
                     </div>

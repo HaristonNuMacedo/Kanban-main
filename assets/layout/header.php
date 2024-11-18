@@ -30,12 +30,13 @@
             <!-- header -->
             <header class="main-header">
                 <?php
-                $pName = 'Nenhum projeto selecionado';
+                $total = '0';
+                $done = '0';
                     foreach($projArray as $project){
                         if($project['project_status'] == 1){
                             $pName = $project['project_name'];
                             $pId = $project['project_id'];
-                        }
+                        } 
                     }
                 ?>
                 <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -45,14 +46,13 @@
                             $pName = $project['project_name'];
                             $pId = $project['project_id'];
                             $done = $project['n_done']; 
-                            $total = $project['n_total']; 
-                        }
-                    }
-                ?>
+                            $total = $project['n_total']; ?>
+                <?php } } ?>
 
                 <h2 class="text-detail">Tarefas Totais - <?php echo $total; ?></h2>
                 <h2 class="text-detail">Tarefas conluídas - <?php echo $done; ?></h2>
                 <h2 class="text-detail">Tarefas NÃO conluídas - <?php $Nclu = $total-$done; echo $Nclu; ?></h2>
+
             </header>
             <!-- /header -->
 

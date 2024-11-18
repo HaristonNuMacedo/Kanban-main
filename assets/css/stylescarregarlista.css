@@ -407,6 +407,20 @@ section.cards-container{
     border: 0px;
 }
 
+.card-item .dataTaskList {
+    font-size: 13px;
+    width: 100px;
+    color: #222;
+    padding: 10px 10px;
+    margin-bottom: 0px!important;
+    margin-left: 10px;
+}
+
+.card-item p.dataTaskList:hover {
+    background-color: #ddd;
+    border: 1px solid #888!important;
+}
+
 .card-item div.prioridadeList {
     width: 120px;
     padding: 10px 20px;

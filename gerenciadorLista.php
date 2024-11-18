@@ -64,6 +64,7 @@
                 <div class="card-item id<?php echo $task['task_id'] ?>">
                     <h2 style="margin-bottom: 5px"><?php echo $task['task_name'] ?></h2>
                         <p><?php echo $task['task_description'] ?></p>
+                        <p class="dataTaskList"> <?php echo date('d/m/Y', strtotime($task['dataTask'])); ?></p>
                     <div class="prioridadeList" style="display:inline-flex;">
                         <span2 style="font-size: 14px; font-weight: 700;"><i class="fas fa-flag" 
                         <?php $task['task_prioridade'] ;
@@ -125,6 +126,7 @@
                         <p>
                             <?php echo $task['task_description'] ?>
                         </p>
+                        <p class="dataTaskList"> <?php echo date('d/m/Y', strtotime($task['dataTask'])); ?></p>
                     <div class="prioridadeList" style="display:inline-flex;">
                         <span2 style="font-size: 14px; font-weight: 700;"><i class="fas fa-flag" 
                         <?php $task['task_prioridade'] ;
@@ -184,6 +186,7 @@
                 <p>
                     <?php echo $task['task_description'] ?>
                 </p>
+                <p class="dataTaskList"> <?php echo date('d/m/Y', strtotime($task['dataTask'])); ?></p>
                 <div class="prioridadeList" style="display:inline-flex;">
                     <span2 style="font-size: 14px; font-weight: 700;"><i class="fas fa-flag" 
                     <?php $task['task_prioridade'] ;

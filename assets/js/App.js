@@ -42,27 +42,27 @@ function addProjectForm(){
 
 //edita o nome do projeto
 function editProjectName(id){
-    title = document.querySelector('.text-container');
-    txtValue = document.querySelector('.text-container h2').innerHTML;
+
+    title = document.querySelector('.btn-container-projeto');
+    txtValue = document.querySelector('.btn-container-projeto p').innerHTML;
 
     let form = document.createElement('form');
     form.action = 'kanban.controller.php?action=editprojectname&id='+id;
     form.method =  'post';
 
-    let input = document.createElement('input');
-    input.type = 'text';
-    input.placeholder = 'Novo título';
-    input.value = txtValue;
-    input.name = 'name';
-    input.className = 'editProjectinput';
-
+    let inputEd = document.createElement('input');
+    inputEd.type = 'text';
+    inputEd.placeholder = 'Novo título';
+    inputEd.value = txtValue;
+    inputEd.name = 'name';
+    inputEd.className = 'editProjectinput02';
 
     let button = document.createElement('input');
     button.type = 'submit';
-    button.value = 'ir';
+    button.value = 'Ok';
     button.className = 'editProjectButton';
 
-    form.appendChild(input);
+    form.appendChild(inputEd);
     form.appendChild(button);
 
     title.innerHTML = '';

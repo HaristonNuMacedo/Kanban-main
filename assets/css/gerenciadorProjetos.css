@@ -527,8 +527,8 @@ li.current p {
 #CRUDproject {
   position: fixed;
   display: none;
-  width: 180px;
-  height: 170px;
+  width: 200px;
+  height: 220px;
   background-color: #ccc;
   z-index: 10;
   top: 450px; left: 250px;
@@ -568,12 +568,51 @@ li.current p {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
-    background-color: #609DF9;
+    background-color: #e90000;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 15px;
     right: 15px;
 }
+
+
+.btn-container-projeto {
+  margin-bottom: 10px;
+}
+
+.btn-container-projeto p {
+  position: relative;
+  color: #222;
+  margin-bottom: 0px;
+}
+
+input.editProjectinput02 {
+  height: 30px;
+}
+
+input.editProjectinput02 {
+  width: 140px!important;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #E6E6E6;
+}
+
+.editProjectinput02::placeholder {
+  color: #BABABA;
+}
+
+.editProjectButton {
+  height: 30px;
+  width: 40px;
+  background-color: #609DF9;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+
+
 
 #tresPontos {
   position: relative;
@@ -637,7 +676,7 @@ li.current p {
 }
 
 input.task02, textarea {
-  width: 350px;
+    width: 350px;
     margin: 10px auto;
     border-bottom: 2px solid #609DF9;
     border-radius: 3px;

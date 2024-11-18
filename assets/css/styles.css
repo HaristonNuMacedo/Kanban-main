@@ -422,6 +422,7 @@ div.hidden-menu{
 .task-register form{
     display: flex;
     flex-direction: column;
+    height: 800px;
 }
 .input-task input, .task-register textarea{
     width: 400px;
@@ -591,6 +592,7 @@ section.main-login {
     SELECT PRIORIDADE
 =========================*/
 .selector {
+    position: relative;
     width: 300px;
   }
   
@@ -613,6 +615,13 @@ section.main-login {
     background: #ccc;
     color: #000;
   }
+
+  input.task02 {
+  width: 350px;
+  margin: 10px auto;
+  border-bottom: 2px solid #609DF9;
+  border-radius: 3px;
+  padding: 10px; }
   
   #list {
     width: 300px;
@@ -667,7 +676,7 @@ section.main-login {
   
   input#insertCadastro {
     position: absolute;
-    top: 380px; right: 15px;
+    top: 480px; right: 15px;
     padding: 5px 25px;
     border-radius: 4px;
     z-index: 1;

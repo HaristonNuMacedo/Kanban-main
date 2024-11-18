@@ -198,6 +198,7 @@ function abrir04() {
     abrirJanela04.style.display = "block";
 }
 
+
 function abrir05() {
     var visaoG05 = document.querySelector('#visaoGeral05')
     visaoG05.style.background = "#00b2f0";

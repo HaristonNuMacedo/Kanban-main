@@ -165,10 +165,13 @@
                             <div id="TelaCRUD" onclick="fecharCRUDproject()"></div>
                                 <div id="CRUDproject" >
                                     <div class="btn-container">
+                                        <div class="btn-container-projeto">
+                                            <p><?php echo $project['project_name']; ?></p>
+                                        </div> 
                                         <a onclick="editProjectName(<?php echo $pId?>)"><i class="fas fa-pen" ></i><label>Editar projeto</label></a>
                                         <a href="kanban.controller.php?action=deleteProject&id=<?php echo $pId;?>"><i class="fas fa-trash"></i><label style="margin-left: 7px;">Excluir projeto</label></a>
                                         <a href="#" onclick="addsTaaskForm()"><input type="button" value="Adicionar Tarefa +"></a>
-                                        <div class="BtnSalvar02"><input type="button" value="Salvar" onclick="fecharCRUDproject2()"></div>
+                                        <div class="BtnSalvar02"><input type="button" value="Fechar" onclick="fecharCRUDproject2()"></div>
                                     </div>           
                                 </div>
 
@@ -252,7 +255,7 @@
                         
                         <div class="input-task">
                             <label for="task"></label>
-                            <input class="task02" name="dataTask" type="date" value="2205/05/25">
+                            <input class="task02" name="dataTask" type="date" value="">
                         <div>
 
                         <div class="selector">

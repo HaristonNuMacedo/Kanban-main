@@ -23,6 +23,7 @@
     <title>Kanban Board</title>
 </head>
 <body>
+
 <div class="container">
 <section class="main-content">
 <section class="cards-container">

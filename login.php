@@ -48,8 +48,6 @@
                         <div class="inputBox">
                             <input type="submit" value="Login">
                         </div>
-
-                        <p class="forget">Caso não tenha login, <a href="register.php">Cadastra-se</a></p>
                     </form>
                 </div>
             </div>

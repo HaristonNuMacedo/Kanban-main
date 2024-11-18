@@ -125,10 +125,18 @@
                         <p>
                             <?php echo $task['task_description'] ?>
                         </p>
-                        <div style="display:inline-flex; margin-top: 5px;">
-                            <span2 style="font-size: 14px; font-weight: 700; top: 3px;">Prioridade:</span2>
-                            <p2 style="font-size: 13px; margin-left: 8px; position:relative; top: -4px"><?php echo $task['task_prioridade'] ?></p2>
-                        </div>
+                    <div class="prioridadeList" style="display:inline-flex;">
+                        <span2 style="font-size: 14px; font-weight: 700;"><i class="fas fa-flag" 
+                        <?php $task['task_prioridade'] ;
+                        if ($task['task_prioridade'] == 'Urgente') {
+                            $colorFlag = '#ff0000';
+                        } else if ($task['task_prioridade'] == 'Alta') { $colorFlag = '#c0c000';}
+                        else if ($task['task_prioridade'] == 'Normal') { $colorFlag = '#0000ff';}
+                        else if ($task['task_prioridade'] == 'Baixa') { $colorFlag = '#008000';}
+                        else { $colorFlag = '#000';}
+                        ?> style="color: <?php echo $colorFlag; ?>; "></i></span2>
+                        <p2 style="font-size: 13px; margin-left: 8px; position:relative;"><?php echo $task['task_prioridade'] ?></p2>
+                    </div>
                     </div>
                 <?php } } ?>
             </div>
@@ -176,9 +184,17 @@
                 <p>
                     <?php echo $task['task_description'] ?>
                 </p>
-                <div style="display:inline-flex; margin-top: 5px;">
-                    <span2 style="font-size: 14px; font-weight: 700; top: 3px;">Prioridade:</span2>
-                    <p2 style="font-size: 13px; margin-left: 8px; position:relative; top: -4px"><?php echo $task['task_prioridade'] ?></p2>
+                <div class="prioridadeList" style="display:inline-flex;">
+                    <span2 style="font-size: 14px; font-weight: 700;"><i class="fas fa-flag" 
+                    <?php $task['task_prioridade'] ;
+                        if ($task['task_prioridade'] == 'Urgente') {
+                            $colorFlag = '#ff0000';
+                        } else if ($task['task_prioridade'] == 'Alta') { $colorFlag = '#c0c000';}
+                        else if ($task['task_prioridade'] == 'Normal') { $colorFlag = '#0000ff';}
+                        else if ($task['task_prioridade'] == 'Baixa') { $colorFlag = '#008000';}
+                        else { $colorFlag = '#000';}
+                    ?> style="color: <?php echo $colorFlag; ?>; "></i></span2>
+                    <p2 style="font-size: 13px; margin-left: 8px; position:relative;"><?php echo $task['task_prioridade'] ?></p2>
                 </div>
             </div>
             <?php } } ?> 

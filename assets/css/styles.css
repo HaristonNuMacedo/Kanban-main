@@ -310,6 +310,9 @@ section.cards-container{
 
 .card-item div.dataReader {
     margin-top: 10px;
+}
+
+.card-item div.dataReader p3 {
     color: #222;
     font-size: 12px;
 }

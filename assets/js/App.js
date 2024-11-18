@@ -78,6 +78,8 @@ function taskEdit(id){
     let descr = document.querySelector('.id'+id +' p').innerHTML
     descr = descr.trim();
     let priord = document.querySelector('.id'+id +' p2').innerHTML
+    let datTk = document.querySelector('.id'+id +' p4').innerHTML
+    const time = new Date(datTk);
     cardItem.innerHTML = '';
 
     let form = document.createElement('form');
@@ -97,6 +99,12 @@ function taskEdit(id){
     textarea.placeholder = 'Edite a descrição da tarefa';
     textarea.value = descr;
     textarea.name = 'description';
+
+    let TSDate = document.createElement('input');
+    TSDate.type = 'date';
+    TSDate.className = 'taskedit-inputDate';
+    TSDate.value = time;
+    TSDate.name = 'dataTask';
 
     var prioridadeSelect = document.createElement("SELECT");
     prioridadeSelect.name = 'prioridade';
@@ -138,6 +146,7 @@ function taskEdit(id){
 
     form.appendChild(inputName);
     form.appendChild(textarea);
+    form.appendChild(TSDate);
     form.appendChild(prioridadeSelect);
     form.appendChild(ocult);
     form.appendChild(btn);

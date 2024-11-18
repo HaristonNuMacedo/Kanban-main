@@ -722,8 +722,8 @@ input.task02, textarea {
 }
 
 input#insertCadastro {
-  position: absolute;
-  top: 380px; right: 15px;
+  position: relative;
+  top: 15px; left: 15px;
   padding: 5px 25px;
   border-radius: 4px;
   z-index: 1;

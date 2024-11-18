@@ -249,6 +249,11 @@
                         <label for="task-description"></label>
                         <textarea class="taskDesc02" name="taskDescription" placeholder="Escreva uma descrição"></textarea>
                         
+                        <div class="input-task">
+                            <label for="task"></label>
+                            <input class="task02" name="dataTask" type="date" value="2205/05/25">
+                        <div>
+
                         <div class="selector">
                             <div id="selectField">
                                 <input id="selectText" name="prioridade" type="text" value="Prioridade">

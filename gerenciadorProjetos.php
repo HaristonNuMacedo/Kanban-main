@@ -160,7 +160,6 @@
                                     </li>
                                 </a>
                                 <div id="tresPontos" onclick="abrirCRUDproject()"><label>...</label></div>
-
                             
                             <div id="TelaCRUD" onclick="fecharCRUDproject()"></div>
                                 <div id="CRUDproject" >

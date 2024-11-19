@@ -82,7 +82,7 @@
                         preg_match_all('/\b\w/u', $string, $m);
                         echo implode('',$m[0]);
                 ?></p>
-                <p class="nameProjectKanban2">Administrador</p>
+                <p class="nameProjectKanban2"><?php echo $_SESSION['user_func']; ?></p>
             </div>   
             <hr style="text-decoration: none;">
             <ul class="nav nav-pills flex-column mb-auto">
@@ -202,7 +202,7 @@
                         </svg> Usuários</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-user"></i>+ Adicionar Usuário</a>
+                    <a class="nav-link" href="./register.php"><i class="fas fa-user"></i>+ Adicionar Usuário</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-user-slash"></i> Remover Usuário</a>

@@ -4,6 +4,7 @@
         private $name;
         private $email;
         private $pass;
+        private $func;
         private $db;
 
         public function __set($attr, $value){
@@ -11,7 +12,7 @@
         }
 
         public function login(){
-            $sql = "SELECT user_id, user_name, user_email, user_pass FROM users WHERE user_email = :email && user_pass = md5(:pass)";
+            $sql = "SELECT user_id, user_name, user_email, user_pass, user_func FROM users WHERE user_email = :email && user_pass = md5(:pass)";
             $stmt = $this->db->prepare($sql);
             $stmt->bindValue(':email', $this->email);
             $stmt->bindValue(':pass', $this->pass);
@@ -25,11 +26,12 @@
         }
 
         public function register(){
-            $sql = "INSERT INTO users(user_name, user_email, user_pass) VALUES(:name, :email, md5(:pass))";
+            $sql = "INSERT INTO users(user_name, user_email, user_pass, user_func) VALUES(:name, :email, md5(:pass), :func)";
             $stmt = $this->db->prepare($sql);
             $stmt->bindValue(':name', $this->name);
             $stmt->bindValue(':email', $this->email);
             $stmt->bindValue(':pass', $this->pass);
+            $stmt->bindValue(':func', $this->func);
 
             $stmt->execute();
         }

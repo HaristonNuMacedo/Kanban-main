@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sorcut icon" href="./assets/img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -14,10 +15,13 @@
     <section class="main-login">
         <div class="container-login">
             <form action="login.controller.php?action=register" method="post">
-                <p class="kanban-title">Crie sua conta para começar</p>
+                <p class="kanban-title">Adicionar Usuário</p>
 
                 <span><label>Nome</label></span>
                 <input type="text" name="name" placeholder="Digite o seu nome">
+
+                <span><label>Função</label></span>
+                <input type="text" name="func" placeholder="Digite o seu nome">
 
                 <span><label>Email</label></span>
                 <input type="email" name="email" placeholder="Digite o seu email">
@@ -28,7 +32,7 @@
                 <input type="submit" value="Cadastrar">
 
                 <div class="container-p">
-                    <a href="index.php"><p>Voltar</p></a>
+                    <a href="./gerenciadorProjetos.php"><p>Voltar</p></a>
                 </div>
             </form>
         </div>

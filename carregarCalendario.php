@@ -61,7 +61,7 @@
     
     function showPage() {
       document.getElementById("loader").style.display = "none";
-      window.location.href = "./assets/fullcalendar/index.php";
+      window.location.href = "calendar.php";
     }
 </script>
 

@@ -19,6 +19,7 @@
             if(count($userInfo) == 1){
                 $_SESSION['user_id'] = $userInfo[0]['user_id'];
                 $_SESSION['user_name'] = $userInfo[0]['user_name'];
+                $_SESSION['user_func'] = $userInfo[0]['user_func'];
 
                 header('location: gerenciadorProjetos.php?refresh');
             }else{
@@ -36,11 +37,12 @@
             $user->__set('name', $_POST['name']);
             $user->__set('pass', $_POST['pass']);
             $user->__set('email', $_POST['email']);
+            $user->__set('func', $_POST['func']);
 
             $user->register();
             $id = $user->getbyEmail();
             
-            $project = new Project;
+            /*$project = new Project;
             $project->__set('db', $db->connect());
             $project->__set('project_name', 'Primeiro Projeto');
             $project->__set('user_id', $id[0]['user_id']);
@@ -49,10 +51,10 @@
             $projectId = $project->getId();
 
             $task = new Task;
-            $task->__set('db', $db->connect());
-            $task->__set('taskName', 'Lorem Ipsum');
-            $task->__set('taskDescription', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales ultricies mollis. Integer vestibulum euismod nunc, quis efficitur purus sagittis eget. Nulla condimentum tellus at massa rutrum venenatis.');
-            $task->__set('projectId', $projectId[0]['project_id']);
+            //$task->__set('db', $db->connect());
+            //$task->__set('taskName', 'Lorem Ipsum');
+            //$task->__set('taskDescription', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales ultricies mollis. Integer vestibulum euismod nunc, quis efficitur purus sagittis eget. Nulla condimentum tellus at massa rutrum venenatis.');
+            //$task->__set('projectId', $projectId[0]['project_id']);
             
             $task->__set('taskStatus', 1);
             $task->create();
@@ -67,10 +69,10 @@
             $task->create();
             $task->create();
             $task->create();
-            $task->create();
+            $task->create();*/
 
 
-            header('location: index.php');
+            header('location: gerenciadorProjetos.php');
         }
     }
 ?>

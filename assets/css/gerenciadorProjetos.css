@@ -282,9 +282,9 @@ html {
 
   .nameProjectKanban2 {
     position: relative;
-    left: 8px; top: 3px;
-    border-left: 2px solid grey;
-    padding-left: 7px;
+    left: 12px; top: 3px;
+    border-left: 3px solid grey;
+    padding-left: 12px;
   }
 
   .nav-underline {

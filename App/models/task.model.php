@@ -14,15 +14,15 @@
         }
 
         public function create(){
-            $sql = "INSERT INTO tasks(task_name, task_description, dataTask, task_prioridade, fk_project_id, task_status) VALUES(:taskName, :taskDescription, :dataTask, :taskPrioridade, :projectId, :taskStatus)";
+            $sql = "INSERT INTO tasks(task_name, task_description, dataTask, task_prioridade,  task_status, fk_project_id) VALUES(:taskName, :taskDescription, :dataTask, :taskPrioridade, :taskStatus, :projectId)";
             
             $stmt = $this->db->prepare($sql);
             $stmt->bindValue(':taskName', $this->taskName);
             $stmt->bindValue(':taskDescription', $this->taskDescription);
             $stmt->bindValue(':dataTask', $this->dataTask);
-            $stmt->bindValue(':taskPrioridade', $this->taskPrioridade);
-            $stmt->bindValue(':projectId', $this->projectId);
+            $stmt->bindValue(':taskPrioridade', $this->taskPrioridade);           
             $stmt->bindValue(':taskStatus', $this->taskStatus);
+            $stmt->bindValue(':projectId', $this->projectId);
             $stmt->execute();
         }
 

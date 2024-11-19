@@ -48,6 +48,10 @@
                         <div class="inputBox">
                             <input type="submit" value="Login">
                         </div>
+
+                        <div class="inputBox">
+                            <a href="./register.php">Cadastrar</a>
+                        </div>
                     </form>
                 </div>
             </div>

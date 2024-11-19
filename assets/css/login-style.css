@@ -238,6 +238,14 @@ section .color:nth-child(3) {
     font-weight: 600;
 }
 
+.form .inputBox a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: rgb(187, 187, 187, 0.2);
+    border-radius: 6px;
+}
+
 .form p {
     margin-top: 0px;
     font-size: 16px;

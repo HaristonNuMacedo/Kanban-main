@@ -37,7 +37,7 @@
             $user->__set('name', $_POST['name']);
             $user->__set('pass', $_POST['pass']);
             $user->__set('email', $_POST['email']);
-            $user->__set('func', $_POST['func']);
+            $user->__set('func', 'Administrador');
 
             $user->register();
             $id = $user->getbyEmail();

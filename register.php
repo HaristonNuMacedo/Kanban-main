@@ -20,9 +20,6 @@
                 <span><label>Nome</label></span>
                 <input type="text" name="name" placeholder="Digite o seu nome">
 
-                <span><label>Função</label></span>
-                <input type="text" name="func" placeholder="Digite o seu nome">
-
                 <span><label>Email</label></span>
                 <input type="email" name="email" placeholder="Digite o seu email">
                 

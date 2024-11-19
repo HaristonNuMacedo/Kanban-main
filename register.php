@@ -1,38 +1,58 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sorcut icon" href="./assets/img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Kanban - Login</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulário de cadastro</title>
+        <link href="./assets/css/stylePG.css" rel="stylesheet">
+        <script src="./assets/js/eventoFormularioRegister.js"></script> 
+        <link rel="sorcut icon" href="./assets/img/Logo-removebg-preview.png" type="image/png" style="width: 16px; height: 16px; transform: rotate(-1deg);">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <style>
+            input#valor {
+                border: none;
+                padding: 10px;
+                margin-top: 10px;
+                font-size: 18px;
+                width: 150px;
+            }
+
+            #slider {
+                width: 300px;
+                margin-left: 18px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="_scripts/jquery.maskedinput.js"></script>
+
+    </head>
+    <body>
+
     <section class="main-login">
-        <div class="container-login">
+        <main>
             <form action="login.controller.php?action=register" method="post">
-                <p class="kanban-title">Adicionar Usuário</p>
+            <h1>Formulário de cadastro</h1>
+                <!-- VERIFICAR NOME -->
+                <div id="msg"></div><div id="msg2"></div>
+                <input type="text"  id="nome"   name="name"   data-color="#fff"  placeholder="Nome"  />
 
-                <span><label>Nome</label></span>
-                <input type="text" name="name" placeholder="Digite o seu nome">
+                <!-- VERIFICAR E-MAIL -->
+                <div id="msgE"></div><div id="msgE2"></div>
+                <input type="email" id="email"  name="email"   data-color2="#fff"  placeholder="Email" />	
 
-                <span><label>Email</label></span>
-                <input type="email" name="email" placeholder="Digite o seu email">
-                
-                <span><label>Senha</label></span>
                 <input type="password" name="pass" placeholder="Digite a sua senha">
 
-                <input type="submit" value="Cadastrar">
+                <input type="submit" id="btn" value="Cadastrar" style="cursor: pointer;">
 
                 <div class="container-p">
-                    <a href="./gerenciadorProjetos.php"><p>Voltar</p></a>
+                    <a href="./index.php"><p>Voltar</p></a>
                 </div>
             </form>
-        </div>
+        </main>
     </section>
-</body>
+    </body>
+    <script>
+        
+    </script>
 </html>

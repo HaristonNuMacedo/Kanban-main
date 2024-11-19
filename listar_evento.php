@@ -11,11 +11,20 @@ foreach($tasks as $task){
 
 $id = $task['task_id'];
 $name = $task['task_name'];
+
+if($task['task_status'] == 1){
+    $color = '#bbb';
+} else if($task['task_status'] == 2){
+    $color = '#609DF9';
+} else if($task['task_status'] == 3) {
+    $color = '#008844';
+}
 $data = $task['dataTask'];
 
 $eventos[] = [
     'id' => $id,
     'title' => $name,
+    'color' => $color,
     'start' => $data,
 ];
 

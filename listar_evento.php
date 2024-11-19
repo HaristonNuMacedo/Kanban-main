@@ -1,33 +1,25 @@
 <?php
 
 // Incluir o arquivo com a conexão com banco de dados
-include_once './conexao.php';
-
-// QUERY para recuperar os eventos
-$query_events = "SELECT id, title, color, start, end FROM events";
-
-// Prepara a QUERY
-$result_events = $conn->prepare($query_events);
-
-// Executar a QUERY
-$result_events->execute();
+include_once './App/kanban.controller.php';
 
 // Criar o array que recebe os eventos
+
 $eventos = [];
 
-// Percorrer a lista de registros retornado do banco de dados
-while($row_events = $result_events->fetch(PDO::FETCH_ASSOC)){
+foreach($tasks as $task){ 
 
-    // Extrair o array
-    extract($row_events);
+$id = $task['task_id'];
+$name = $task['task_name'];
+$data = $task['dataTask'];
 
-    $eventos[] = [
-        'id' => $id,
-        'title' => $title,
-        'color' => $color,
-        'start' => $start,
-        'end' => $end,
-    ];
+$eventos[] = [
+    'id' => $id,
+    'title' => $name,
+    'start' => $data,
+];
+
 }
 
 echo json_encode($eventos);
+

@@ -279,65 +279,71 @@ section.cards-container{
 .card-item pcont{
     width: 40px;
     color: #222;
-    padding: 10px 15px;
+    padding: 6px 15px;
     border-right: 1px solid #aaa;
+    align-content: center;
 }
 
 .card-item h2{
     font-size: 16px;
     color: #000;
     width: 350px;
-    padding: 10px 0px;
+    padding: 6px 0px;
     margin-bottom: 0px!important;
     padding-left: 20px;
     border-radius: 0px;
     cursor: pointer;
     border: 0px 1px solid #aaa;
     font-weight: 500;
+    align-content: center;
 }
 
 .card-item h3{
     font-size: 13px;
     color: #222;
     width: 350px;
-    padding: 10px 0px;
+    padding: 6px 0px;
     margin-bottom: 0px!important;
     padding-left: 20px;
     border-radius: 0px;
     cursor: pointer;
     border: 0px 1px solid #aaa;
     font-weight: 500;
+    align-content: center;
 }
 
 .card-item .statusTaskList {
     font-size: 13px;
     width: 140px;
     color: #222;
-    padding: 10px 10px;
+    padding: 6px 10px;
     margin-bottom: 0px!important;
     margin-left: 0px;
     border: 0px solid black;
     border-left: 1px solid #aaa;
+    align-content: center;
 }
 
 .card-item p, .card-item div.prioridadeList {
     font-size: 13px;
     color: #222;
     width: 350px;
-    padding: 10px 10px;
+    padding: 6px 10px;
     margin-bottom: 0px!important;
     border-radius: 0px;
     cursor: pointer;
     border-left: 1px solid #aaa;
+    align-content: center;
 }
 
 .card-item .dataTaskList {
     font-size: 13px;
     width: 100px;
     color: #222;
-    padding: 10px 10px;
+    padding: 6px 10px;
     margin-bottom: 0px!important;
     margin-left: 0px;
+    align-content: center;
 }
 
 .card-item p.dataTaskList2, .card-item p2.dataTaskList2{
@@ -350,11 +356,13 @@ section.cards-container{
     border: 0;
     border-radius: 4px;
     background-color: #239dbb;
+    align-content: center;
 }
 
 .card-item p2.dataTaskList2 {
     background: none;
     color: #222;
+    align-content: center;
 }
 
 .card-item p.dataTaskList:hover {
@@ -363,13 +371,14 @@ section.cards-container{
 
 .card-item div.prioridadeList {
     width: 120px;
-    padding: 10px 20px;
+    padding: 6px 20px;
     border-right: 1px solid #aaa;
+    align-content: center;
 }
 
 .card-item div.prioridadeList i {
     position: relative;
-    top: 3px;
+    top: 0px;
 }
 
 .card-item div.prioridadeList:hover {

@@ -94,7 +94,7 @@
                     </div>
                         <p class="dataTaskList"> <?php echo date('d/m/Y', strtotime($task['dataTask'])); ?></p>
                     <div class="prioridadeList" style="display:inline-flex;">
-                        <span2 style="font-size: 14px; font-weight: 700;"><i class="fas fa-flag" 
+                        <span2 style="font-size: 14px; font-weight: 700; align-content: center; "><i class="fas fa-flag" 
                         <?php $task['task_prioridade'] ;
                         if ($task['task_prioridade'] == 'Urgente') {
                             $colorFlag = '#ff0000';
@@ -103,7 +103,7 @@
                         else if ($task['task_prioridade'] == 'Baixa') { $colorFlag = '#008000';}
                         else { $colorFlag = '#000';}
                         ?> style="color: <?php echo $colorFlag; ?>; "></i></span2>
-                        <p2 style="font-size: 13px; margin-left: 8px; position:relative;"><?php echo $task['task_prioridade'] ?></p2>
+                        <p2 style="font-size: 13px; margin-left: 8px; position:relative; align-content: center;"><?php echo $task['task_prioridade'] ?></p2>
                     </div>
                 </div>
             <?php } } ?>

@@ -56,6 +56,7 @@
             
             <div class="card-body-1">
                 <div class="card-item" style="background-color: #eee;">
+                    <pcont>#</pcont>
                     <h3 style="margin-bottom: 5px;">Nome</h3>
                         <p>Descrição</p>
                         <div class="statusTaskList">
@@ -67,10 +68,12 @@
                     </div>
                 </div>
 
-            <?php foreach($tasks as $task){ 
-                if($task['task_status'] != 0 && $task['task_status'] != 3){
+            <?php $countStatus=0; foreach($tasks as $task){ 
+                $countStatus++;
+                if($task['task_status'] != 0 && $task['task_status'] != 3){ 
             ?>
                 <div class="card-item id<?php echo $task['task_id'] ?>">
+                    <pcont><?php echo $countStatus; ?></pcont>
                     <h2 style="margin-bottom: 5px"><?php echo $task['task_name'] ?></h2>
                         <p><?php echo $task['task_description'] ?></p>
                     <div class="statusTaskList">

@@ -87,7 +87,7 @@
             <hr style="text-decoration: none;">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item" id="teste1">
-                <a href="#" class="nav-link" id="visaoGeral" onclick="abrir01()" style="color: white;">
+                <a href="#" class="nav-link" id="visaoGeral" onclick="abrir01()" style="color: white; background-color: #00b2f0;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
                         <path d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/>
                     </svg>
@@ -95,7 +95,7 @@
                 </a>
                 </li>
                 <li>
-                <a href="#" class="nav-link" id="visaoGeral02" onclick="abrir02()" style="color: white; background-color: #00b2f0;">
+                <a href="#" class="nav-link" id="visaoGeral02" onclick="abrir02()" style="color: white; ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-kanban" viewBox="0 0 16 16">
                         <path d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                         <path d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"/>
@@ -217,10 +217,10 @@
                 <?php } ?>
             </nav>
             
-            <object type="text/html" data="./carregarDashboard.php" id="testeInserir" style="display: none; transition: all .5s ease-out;">
+            <object type="text/html" data="./carregarDashboard.php" id="testeInserir" style="display: Block; transition: all .5s ease-out;">
             </object>
 
-            <object data="./carregarKanban.php" id="testeInserir02" style="display: block; transition: all .5s ease-out;">    
+            <object data="./carregarKanban.php" id="testeInserir02" style="display: none; transition: all .5s ease-out;">    
             </object>
 
             <object type="text/html" data="./carregarLista.php" id="testeInserir03" style="display: none; transition: all .5s ease-out;">

@@ -68,7 +68,7 @@
               </div>
             </div>
 
-            <div class="row mt-4">
+             <div class="row mt-4">
               <div class="col-md-5">
                 <div class="box shadow mt-4">
                   <div id="radialBarBottom"></div>
@@ -81,7 +81,7 @@
               </div>
             </div>
 
-            <div class="row mt-4">
+            <!--<div class="row mt-4">
               <div class="col-md-5">
                 <div class="box shadow mt-4">
                   <div id="barchart"></div>
@@ -92,7 +92,7 @@
                   <div id="areachart"></div>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>

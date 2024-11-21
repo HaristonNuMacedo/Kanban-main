@@ -28,7 +28,7 @@ window.Apex = {
     chart: {
       id: 'spark1',
       group: 'sparks',
-      type: 'line',
+      type: 'text',
       height: 80,
       sparkline: {
         enabled: true
@@ -76,7 +76,7 @@ window.Apex = {
     chart: {
       id: 'spark2',
       group: 'sparks',
-      type: 'line',
+      type: 'text',
       height: 80,
       sparkline: {
         enabled: true
@@ -124,7 +124,7 @@ window.Apex = {
     chart: {
       id: 'spark3',
       group: 'sparks',
-      type: 'line',
+      type: 'text',
       height: 80,
       sparkline: {
         enabled: true
@@ -177,7 +177,7 @@ window.Apex = {
     chart: {
       id: 'spark4',
       group: 'sparks',
-      type: 'line',
+      type: 'text',
       height: 80,
       sparkline: {
         enabled: true

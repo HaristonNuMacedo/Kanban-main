@@ -216,6 +216,7 @@ header.main-header {
 main.workspace-container {
     padding: 20px;
     margin-bottom: 75px;
+    padding-top: 5px;
 }
 
 section.cards-container{
@@ -234,9 +235,9 @@ section.cards-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5px;
+    padding: 0 0px;
     background-color: transparent;
-    height: 35px;
+    height: 0;
     border-radius: 6px;
     width: 100%;
     margin-bottom: 15px;

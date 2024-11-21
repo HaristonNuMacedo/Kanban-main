@@ -230,34 +230,16 @@ section.cards-container{
     margin: 20px;
 }
 
-.card-header, .card-header-1, .card-header-3 {
+.card-header-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5px;
-    background-color: #609DF9;
+    background-color: transparent;
     height: 35px;
     border-radius: 6px;
-    width: 230px;
+    width: 100%;
     margin-bottom: 15px;
-}
-
-.card-header {
-    margin-top: 40px;
-}
-
-.card-header-1 {
-    background-color: #bbb;
-}
-
-.card-header-3 {
-    background-color: #008844;
-    margin-top: 40px;
-}
-
-.card-header p, .card-header i, .card-header-3 p, .card-header-3 i {
-    color: #fff;
-    padding: 0 4px;
 }
 
 .card-header-1 p, .card-header-1 i {
@@ -265,90 +247,8 @@ section.cards-container{
     padding: 0 4px;
 }
 
-.card-header i, .card-header-1 i, .card-header-3 i {
+.card-header i {
     margin-right: 10px;
-}
-
-.btnV, .btnEA {
-    position: relative;
-    left: -32px;
-    bottom: 2px;
-    cursor: pointer;
-}
-
-.btnEA {
-    position: relative;
-    left: -32px;
-    bottom: 2px;
-    cursor: pointer;
-}
-
-.btnV2 {
-    position: relative;
-    left: -38px;
-    bottom: 4px;
-    transition: 1s;
-    transform: rotate(270deg);
-    display: none;
-    cursor: pointer;
-}
-
-.btnEA2 {
-    position: relative;
-    left: -38px;
-    bottom: 4px;
-    transition: 1s;
-    transform: rotate(270deg);
-    color: #000;
-    display: none;
-    cursor: pointer;
-}
-
-.btnC {
-    position: relative;
-    left: -33px;
-    bottom: 4px;
-    cursor: pointer;
-}
-
-.btnC2 {
-    position: relative;
-    left: -38px;
-    bottom: 4px;
-    transition: 1s;
-    transform: rotate(270deg);
-    color: #000;
-    display: none;
-    cursor: pointer;
-}
-
-.btnEA i, .btnEA2 i, .btnC i, .btnC2 i {
-    color: #000;
-}
-
-.card-header-1 .txtPendente{
-    position: relative;
-    left: -57px;
-}
-
-.card-header .txtPendente2{
-    position: relative;
-    left: -34px;
-}
-
-.card-header-3 .txtPendente3{
-    position: relative;
-    left: -54px;
-}
-
-.card-body{
-    background-color: #fff;
-    padding: 0px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom: 1px solid #aaa;
-    border-top: 1px solid #aaa;
-    margin-bottom: 40px;
 }
 
 .card-body-1{
@@ -356,19 +256,10 @@ section.cards-container{
     padding: 0px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-bottom: 1px solid #aaa;
-    border-top: 1px solid #aaa;
+    border: 1px solid #aaa;
     margin-bottom: 40px;
 }
 
-.card-body-3{
-    background-color: #fff;
-    padding: 0px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom: 1px solid #aaa;
-    border-top: 1px solid #aaa;
-}
 
 .card-item {
     border-bottom: 1px solid #aaa;
@@ -377,7 +268,7 @@ section.cards-container{
 }
 
 .card-item:hover {
-    background-color: #eee;
+    background-color: rgb(96, 157, 249, 0.2);
 }
 
 .card-item:last-child{
@@ -391,9 +282,25 @@ section.cards-container{
     padding: 10px 0px;
     margin-bottom: 0px!important;
     padding-left: 20px;
-    border-radius: 6px;
+    border-radius: 0px;
     cursor: pointer;
+    border: 0px 1px solid #aaa;
+    font-weight: 500;
 }
+
+.card-item h3{
+    font-size: 14px;
+    color: #222;
+    width: 350px;
+    padding: 10px 0px;
+    margin-bottom: 0px!important;
+    padding-left: 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    border: 0px 1px solid #aaa;
+    font-weight: 500;
+}
+
 
 
 .card-item p, .card-item div.prioridadeList {
@@ -402,9 +309,9 @@ section.cards-container{
     width: 350px;
     padding: 10px 10px;
     margin-bottom: 0px!important;
-    border-radius: 6px;
+    border-radius: 0px;
     cursor: pointer;
-    border: 0px;
+    border-left: 1px solid #aaa;
 }
 
 .card-item .dataTaskList {
@@ -413,7 +320,7 @@ section.cards-container{
     color: #222;
     padding: 10px 10px;
     margin-bottom: 0px!important;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .card-item p.dataTaskList2 {
@@ -422,17 +329,17 @@ section.cards-container{
     color: #222;
     padding: 10px 10px;
     margin-bottom: 0px!important;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .card-item p.dataTaskList:hover {
     background-color: #ddd;
-    border: 1px solid #888!important;
 }
 
 .card-item div.prioridadeList {
     width: 120px;
     padding: 10px 20px;
+    border-right: 1px solid #aaa;
 }
 
 .card-item div.prioridadeList i {
@@ -442,7 +349,6 @@ section.cards-container{
 
 .card-item div.prioridadeList:hover {
     background-color: #ddd;
-    border: 1px solid #888!important;
 }
 
 .card-item p2 {

@@ -33,13 +33,12 @@
     ?>
         <div class="card">
             <div class="card-header-1">
-            <p><i class="fas fa-thumbtack"></i>Tabela </p>
+            <p>Sem tarefas adicionadas </p>
             <p><?php echo $countTotal ?> &nbsp</p>
         </div>
 
         <div class="card-body-1">
             <div class="card-item">
-                    <p style="font-size: 16px; color: #555"></p>
                 </div>  
             </div>
         </div>
@@ -51,13 +50,20 @@
     ?>
         <div class="card">
             <div class="card-header-1">
-                <div class="btnV" onclick="fecharLista()"><i class="fas fa-sort-down"></i></div>
-                <div class="btnV2" onclick="abrirLista()"><i class="fas fa-sort-down"></i></div>
-                <p class="txtPendente"><i class="fas fa-thumbtack"></i>Pendente </p>
+                <p class="txtPendente"> </p>
                 <p><?php ?> &nbsp</p>
             </div>
             
             <div class="card-body-1">
+                <div class="card-item" style="background-color: #eee;">
+                    <h3 style="margin-bottom: 5px;">Nome</h3>
+                        <p>Descrição</p>
+                        <p class="dataTaskList2">Status</p>
+                        <p class="dataTaskList"> Data</p>
+                    <div class="prioridadeList" style="display:inline-flex;">
+                        <p2 style="font-size: 13px; margin-left: 8px; position:relative;">Prioridade</p2>
+                    </div>
+                </div>
 
             <?php foreach($tasks as $task){ 
                 if($task['task_status'] != 0 && $task['task_status'] != 3){

@@ -59,7 +59,7 @@
                     <h3 style="margin-bottom: 5px;">Nome</h3>
                         <p>Descrição</p>
                         <div class="statusTaskList">
-                            <p class="dataTaskList2">Status</p>
+                            <p2 class="dataTaskList2">Status</p2>
                         </div>
                         <p class="dataTaskList"> Data</p>
                     <div class="prioridadeList" style="display:inline-flex;">
@@ -74,16 +74,20 @@
                     <h2 style="margin-bottom: 5px"><?php echo $task['task_name'] ?></h2>
                         <p><?php echo $task['task_description'] ?></p>
                     <div class="statusTaskList">
-                        <p class="dataTaskList2"><?php 
-                        if ($task['task_status'] == 1) {
-                            echo 'Pendente';
-                        } else if ($task['task_status'] == 2) {
-                            echo 'Em andamento';
-                        } else if ($task['task_status'] == 2) {
-                            echo 'Concluído';
-                        }
-                         ?> Teste
-                        </p>
+                    <?php 
+                        if ($task['task_status'] == 1) {?>
+                            <p class="dataTaskList2" style="background-color: #888888;">
+                        <?php echo 'Pendente';  ?>
+                        </p> <?php
+                        } else if ($task['task_status'] == 2) {?>
+                            <p class="dataTaskList2" style="background-color: #609DF9;">
+                        <?php echo 'Em andamento'; ?>
+                        </p> <?php
+                        } else if ($task['task_status'] == 3) {?>
+                            <p class="dataTaskList2" style="background-color: #008844;">
+                        <?php echo'Concluído';?>
+                        </p> <?php
+                        }?>
                     </div>
                         <p class="dataTaskList"> <?php echo date('d/m/Y', strtotime($task['dataTask'])); ?></p>
                     <div class="prioridadeList" style="display:inline-flex;">

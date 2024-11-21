@@ -303,7 +303,7 @@ section.cards-container{
 
 .card-item .statusTaskList {
     font-size: 13px;
-    width: 120px;
+    width: 140px;
     color: #222;
     padding: 10px 10px;
     margin-bottom: 0px!important;
@@ -332,16 +332,21 @@ section.cards-container{
     margin-left: 0px;
 }
 
-.card-item p.dataTaskList2 {
+.card-item p.dataTaskList2, .card-item p2.dataTaskList2{
     font-size: 13px;
-    width: 100px;
-    color: #222;
+    width: 120px;
+    color: #fff;
     padding: 5px 10px;
     margin-bottom: 0px!important;
     margin-left: 0px;
     border: 0;
     border-radius: 4px;
     background-color: #239dbb;
+}
+
+.card-item p2.dataTaskList2 {
+    background: none;
+    color: #222;
 }
 
 .card-item p.dataTaskList:hover {

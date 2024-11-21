@@ -52,7 +52,7 @@ function manterCRUDTask2() {
 function abrir01() {
     var visaoG = document.querySelector('#visaoGeral')
     visaoG.style.background = "#00b2f0";
-    visaoG.style.color = "black";
+    visaoG.style.color = "white";
 
     var visaoG02 = document.querySelector('#visaoGeral02')
     visaoG02.style.background = "#222";
@@ -89,7 +89,7 @@ function abrir01() {
 function abrir02() {
     var visaoG02 = document.querySelector('#visaoGeral02')
     visaoG02.style.background = "#00b2f0";
-    visaoG02.style.color = "#000";
+    visaoG02.style.color = "#fff";
 
     var visaoG = document.querySelector('#visaoGeral')
     visaoG.style.background = "#222";
@@ -126,7 +126,7 @@ function abrir02() {
 function abrir03() {
     var visaoG03 = document.querySelector('#visaoGeral03')
     visaoG03.style.background = "#00b2f0";
-    visaoG03.style.color = "#000";
+    visaoG03.style.color = "#fff";
 
     var visaoG = document.querySelector('#visaoGeral')
     visaoG.style.background = "#222";
@@ -164,7 +164,7 @@ function abrir03() {
 function abrir04() {
     var visaoG04 = document.querySelector('#visaoGeral04')
     visaoG04.style.background = "#00b2f0";
-    visaoG04.style.color = "#000";
+    visaoG04.style.color = "#fff";
 
     var visaoG = document.querySelector('#visaoGeral')
     visaoG.style.background = "#222";
@@ -202,7 +202,7 @@ function abrir04() {
 function abrir05() {
     var visaoG05 = document.querySelector('#visaoGeral05')
     visaoG05.style.background = "#00b2f0";
-    visaoG05.style.color = "#000";
+    visaoG05.style.color = "#fff";
 
     var visaoG = document.querySelector('#visaoGeral')
     visaoG.style.background = "#222";

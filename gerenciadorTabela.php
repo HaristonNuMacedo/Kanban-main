@@ -69,8 +69,8 @@
                 </div>
 
             <?php $countStatus=0; foreach($tasks as $task){ 
-                $countStatus++;
-                if($task['task_status'] != 0 && $task['task_status'] != 3){ 
+                
+                if($task['task_status'] != 0 && $task['task_status'] != 3){ $countStatus++;
             ?>
                 <div class="card-item id<?php echo $task['task_id'] ?>">
                     <pcont><?php echo $countStatus; ?></pcont>

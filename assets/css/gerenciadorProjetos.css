@@ -445,6 +445,10 @@ html {
   text-decoration: none;
 }
 
+#UsuarioPg {
+  position: relative; top: 0px;
+}
+
 #Pag2UsuarioPgMeioProjects {
   text-decoration: none;
   display: none;
@@ -771,6 +775,10 @@ input#insertCadastro {
 }
 
 
-
+@media screen and (max-width: 720px) {
+  .aside-body {
+    height: calc(55vh - 200px);}
+  
+}
 
 

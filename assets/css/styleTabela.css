@@ -289,7 +289,7 @@ section.cards-container{
 }
 
 .card-item h3{
-    font-size: 14px;
+    font-size: 13px;
     color: #222;
     width: 350px;
     padding: 10px 0px;
@@ -301,7 +301,16 @@ section.cards-container{
     font-weight: 500;
 }
 
-
+.card-item .statusTaskList {
+    font-size: 13px;
+    width: 120px;
+    color: #222;
+    padding: 10px 10px;
+    margin-bottom: 0px!important;
+    margin-left: 0px;
+    border: 0px solid black;
+    border-left: 1px solid #aaa;
+}
 
 .card-item p, .card-item div.prioridadeList {
     font-size: 13px;
@@ -325,11 +334,14 @@ section.cards-container{
 
 .card-item p.dataTaskList2 {
     font-size: 13px;
-    width: 120px;
+    width: 100px;
     color: #222;
-    padding: 10px 10px;
+    padding: 5px 10px;
     margin-bottom: 0px!important;
     margin-left: 0px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #239dbb;
 }
 
 .card-item p.dataTaskList:hover {

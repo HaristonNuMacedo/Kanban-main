@@ -13,7 +13,7 @@ $id = $task['task_id'];
 $name = $task['task_name'];
 
 if($task['task_status'] == 1){
-    $color = '#bbb';
+    $color = '#888888';
 } else if($task['task_status'] == 2){
     $color = '#609DF9';
 } else if($task['task_status'] == 3) {

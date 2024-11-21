@@ -79,7 +79,6 @@ function taskEdit(id){
     descr = descr.trim();
     let priord = document.querySelector('.id'+id +' p2').innerHTML
     let datTk = document.querySelector('.id'+id +' p4').innerHTML
-    const time = new Date(datTk);
     cardItem.innerHTML = '';
 
     let form = document.createElement('form');
@@ -103,7 +102,7 @@ function taskEdit(id){
     let TSDate = document.createElement('input');
     TSDate.type = 'date';
     TSDate.className = 'taskedit-inputDate';
-    TSDate.value = time;
+    TSDate.value = datTk;
     TSDate.name = 'dataTask';
 
     var prioridadeSelect = document.createElement("SELECT");
@@ -137,7 +136,6 @@ function taskEdit(id){
     ocult.name = 'id';
     ocult.value = id;
     ocult.style.display = 'none';
-
 
     let btn = document.createElement('input');
     btn.type = 'submit';

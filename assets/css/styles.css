@@ -691,6 +691,7 @@ section.main-login {
 	border: 1px solid #999;
 	font-size: 13px;
 	color: #444;
+    margin-left: 38px;
 
 	-webkit-appearance:none; 
 }

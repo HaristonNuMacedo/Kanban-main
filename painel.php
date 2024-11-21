@@ -41,7 +41,7 @@
                     <h2 style="margin-bottom: 5px"><?php echo $task['task_name'] ?></h2>
                         <p><?php echo $task['task_description'] ?></p> 
                         <div class="dataReader"><i class="far fa-calendar"></i>
-                            <p4 style="display: none;"><?php echo $task['dataTask']; ?></p4>
+                            <p4 style="display: none;"><?php echo date('Y-m-d', strtotime($task['dataTask'])); ?></p4>
                             <p3> <?php echo date('d/m/Y', strtotime($task['dataTask'])); ?></p3>
                         </div>
                     <div style="display:inline-flex; margin-top: 5px;">

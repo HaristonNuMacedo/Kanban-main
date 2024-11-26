@@ -71,12 +71,12 @@ body {
   
   .sparkboxes .box1 {
     /*background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);*/
-    background-image: linear-gradient( 135deg, #91830a 40%, #ffe600 100%);
+    background-image: linear-gradient( 135deg, #91830a 40%, #d8c411 100%);
   }
   
   .sparkboxes .box2 {
     /*background-image: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);*/
-    background-image: linear-gradient( 135deg, #222222 40%, #888888 100%);
+    background-image: linear-gradient( 135deg, #111111 40%, #555555 100%);
   }
   
   .sparkboxes .box3 {
@@ -86,5 +86,5 @@ body {
   
   .sparkboxes .box4 {
     /*background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);*/
-    background-image: linear-gradient( 135deg, #008844 40%, #00ff80 100%);
+    background-image: linear-gradient( 135deg, #008844 40%, #10d673 100%);
   }

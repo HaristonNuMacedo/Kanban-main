@@ -52,7 +52,7 @@
                 <div class="box box2">
                   <div class="details">
                     <?php $qdtTarefa=0; $qdtTarefa02=0; $qdtTarefa03=0;
-                    
+                    foreach($projArray as $project){
                         foreach($tasks as $task){ 
                           $id = $task['task_id'];
                           $name = $task['task_name'];
@@ -63,7 +63,7 @@
                               $qdtTarefa02++;
                           } else if($task['task_status'] == 3) {
                               $qdtTarefa03++;
-                        } }?>
+                        } } }?>
                     <h3><?php echo $qdtTarefa; ?></h3>
                     <h4>Tarefas Pendentes</h4>
                   </div>

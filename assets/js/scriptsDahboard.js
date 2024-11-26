@@ -372,6 +372,7 @@ window.Apex = {
     radialBar: {
       dataLabels: {
         name: {
+          color: '#fff',
           fontSize: '22px',
         },
         value: {
@@ -388,7 +389,7 @@ window.Apex = {
       }
     }
   },
-  colors: ["#008844", '#0396FF', '#777'],
+  colors: ["#008844", '#0396FF', '#343434'],
   labels: ['Concluídos', 'Em andamento', 'Pendentes'],
   };
 
@@ -396,18 +397,19 @@ window.Apex = {
   chart.render();
 
 
-
-
-
   var options = {
     series: [
     {
-      name: "High - 2013",
-      data: [28, 29, 33, 36, 32, 32, 33]
+      name: "Pendente - 2024",
+      data: [28, 29, 33, 36, 12, 32, 33, 22, 28, 33, 25, 36]
     },
     {
-      name: "Low - 2013",
-      data: [12, 11, 14, 18, 17, 13, 13]
+      name: "Low - 2024",
+      data: [12, 6, 14, 18, 17, 12, 25, 35, 17, 14, 9, 18]
+    },
+    {
+      name: "Low - 2024",
+      data: [3, 10, 4, 8, 1, 5, 3, 10, 12, 7, 2, 4]
     }
   ],
     chart: {
@@ -428,7 +430,7 @@ window.Apex = {
       show: false
     }
   },
-  colors: ['#77B6EA', '#545454'],
+  colors: ['#555', '#0396FF', '#008844'],
   dataLabels: {
     enabled: true,
   },
@@ -436,7 +438,7 @@ window.Apex = {
     curve: 'smooth'
   },
   title: {
-    text: 'Average High & Low Temperature',
+    text: 'Movimentação de Tarefas durante Ano (2024)',
     align: 'left'
   },
   grid: {
@@ -450,9 +452,9 @@ window.Apex = {
     size: 1
   },
   xaxis: {
-    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
     title: {
-      text: 'Month'
+      text: 'Movimentação de Tarefas'
     }
   },
   yaxis: {

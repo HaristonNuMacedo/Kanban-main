@@ -64,7 +64,7 @@
                           } else if($task['task_status'] == 3) {
                               $qdtTarefa03++;
                         } } }?>
-                    <h3><?php echo $qdtTarefa; ?></h3>
+                    <h3 id="TarPen"><?php echo $qdtTarefa; ?></h3>
                     <h4>Tarefas Pendentes</h4>
                   </div>
                   <div id="spark2"></div>
@@ -73,7 +73,7 @@
               <div class="col-md-3">
                 <div class="box box3">
                   <div class="details">
-                    <h3><?php echo $qdtTarefa02; ?></h3>
+                    <h3 id="TarAnd"><?php echo $qdtTarefa02; ?></h3>
                     <h4>Em andamento</h4>
                   </div>
                   <div id="spark3"></div>
@@ -82,7 +82,7 @@
               <div class="col-md-3">
                 <div class="box box4">
                   <div class="details">
-                    <h3><?php echo $qdtTarefa03; ?></h3>
+                    <h3 id="TarCon"><?php echo $qdtTarefa03; ?></h3>
                     <h4>Tarefas Concluídas</h4>
                   </div>
                   <div id="spark4"></div>
@@ -98,7 +98,7 @@
               </div>
               <div class="col-md-7">
                 <div class="box shadow mt-4">
-                  <div id="line-adwords" class=""></div>
+                  <div id="lineAdwords" class=""></div>
                 </div>
               </div>
             </div>

@@ -251,7 +251,7 @@ window.Apex = {
       curve: 'smooth',
       width: 2
     },
-    colors: ["#888888", '#609DF9', '#008844'],
+    colors: ["#111111", '#0396FF', '#008844'],
     series: [{
         name: "Pendentes",
         data: [1, 15, 26, 20, 33, 27]
@@ -266,13 +266,13 @@ window.Apex = {
       }
     ],
     title: {
-      text: 'Media',
+      text: 'Projeção de Tarefas',
       align: 'left',
       offsetY: 25,
       offsetX: 20
     },
     subtitle: {
-      text: 'Statistics',
+      text: 'Estatísticas',
       offsetY: 55,
       offsetX: 20
     },
@@ -289,7 +289,7 @@ window.Apex = {
         bottom: 0
       }
     },
-    labels: ['01/15/2002', '01/16/2002', '01/17/2002', '01/18/2002', '01/19/2002', '01/20/2002'],
+    labels: ['06/2024', '07/2024', '18/2024', '09/2024', '10/2024', '11/2024'],
     xaxis: {
       tooltip: {
         enabled: false
@@ -347,9 +347,23 @@ window.Apex = {
   chartCircle4.render();
 
 
+  window.onload = function() {
+    const txtValue = document.querySelector('#TarPen').innerHTML;
+    const txtValue2 = document.querySelector('#TarAnd').innerHTML;
+    const txtValue3 = document.querySelector('#TarCon').innerHTML;
 
+    const qtdtxtValue = parseInt(txtValue);
+    const qtdtxtValue2 = parseInt(txtValue2);
+    const qtdtxtValue3 = parseInt(txtValue3);
+
+    const QtdTotal = qtdtxtValue + qtdtxtValue2 + qtdtxtValue3;
+
+    const PorcetxtValue = (qtdtxtValue / QtdTotal) * 100;
+    const PorcetxtValue2 = (qtdtxtValue2 / QtdTotal) * 100;
+    const PorcetxtValue3 = (qtdtxtValue3 / QtdTotal) * 100;
+  
   var options = {
-    series: [55, 67, 83],
+    series: [PorcetxtValue3.toFixed(2), PorcetxtValue2.toFixed(2), PorcetxtValue.toFixed(2)],
     chart: {
     height: 350,
     type: 'radialBar',
@@ -368,14 +382,96 @@ window.Apex = {
           label: 'Total de Tarefas',
           formatter: function (w) {
             // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
-            return 249
+            return QtdTotal;
           }
         }
       }
     }
   },
+  colors: ["#008844", '#0396FF', '#777'],
   labels: ['Concluídos', 'Em andamento', 'Pendentes'],
   };
 
   var chart = new ApexCharts(document.querySelector("#chart"), options);
   chart.render();
+
+
+
+
+
+  var options = {
+    series: [
+    {
+      name: "High - 2013",
+      data: [28, 29, 33, 36, 32, 32, 33]
+    },
+    {
+      name: "Low - 2013",
+      data: [12, 11, 14, 18, 17, 13, 13]
+    }
+  ],
+    chart: {
+    height: 350,
+    type: 'line',
+    dropShadow: {
+      enabled: true,
+      color: '#000',
+      top: 18,
+      left: 7,
+      blur: 10,
+      opacity: 0.2
+    },
+    zoom: {
+      enabled: false
+    },
+    toolbar: {
+      show: false
+    }
+  },
+  colors: ['#77B6EA', '#545454'],
+  dataLabels: {
+    enabled: true,
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  title: {
+    text: 'Average High & Low Temperature',
+    align: 'left'
+  },
+  grid: {
+    borderColor: '#e7e7e7',
+    row: {
+      colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+      opacity: 0.5
+    },
+  },
+  markers: {
+    size: 1
+  },
+  xaxis: {
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    title: {
+      text: 'Month'
+    }
+  },
+  yaxis: {
+    title: {
+      text: 'Temperature'
+    },
+    min: 5,
+    max: 40
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'right',
+    floating: true,
+    offsetY: -25,
+    offsetX: -5
+  }
+  };
+
+  var lineAdwords = new ApexCharts(document.querySelector("#lineAdwords"), options);
+  lineAdwords.render();
+
+}

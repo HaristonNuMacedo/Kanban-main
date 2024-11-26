@@ -1,5 +1,5 @@
 body {
-    background: #343E59;
+    background: /*#343E59*/ #fff;
     color: #777;
     font-family: Montserrat, Arial, sans-serif;
     padding-top: 50px;
@@ -40,7 +40,7 @@ body {
   }
   
   .box {
-    background-color: #2B2D3E;
+    background-color: /*#2B2D3E*/#fff;
     padding: 25px 20px;
   }
   

@@ -400,15 +400,15 @@ window.Apex = {
   var options = {
     series: [
     {
-      name: "Pendente - 2024",
+      name: "Pendente",
       data: [28, 29, 33, 36, 12, 32, 33, 22, 28, 33, 25, 36]
     },
     {
-      name: "Low - 2024",
+      name: "Em andamento",
       data: [12, 6, 14, 18, 17, 12, 25, 35, 17, 14, 9, 18]
     },
     {
-      name: "Low - 2024",
+      name: "Concluído",
       data: [3, 10, 4, 8, 1, 9, 3, 5, 12, 7, 2, 4]
     }
   ],

@@ -2,7 +2,7 @@
     require 'kanban.controller.php';
 
     if(isset($_GET['refresh'])){
-        header('location: gerenciadorLista.php');
+        header('location: carregarTabela.php');
     }
 
     $total = $_SESSION['user_id']; 

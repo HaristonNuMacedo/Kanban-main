@@ -2,7 +2,7 @@
     require 'kanban.controller.php';
 
     if(isset($_GET['refresh'])){
-        header('location: painel.php');
+        header('location: carregar.php');
     }
 
     $total = $_SESSION['user_id']; 

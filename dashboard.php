@@ -1,3 +1,11 @@
+<?php
+    require 'kanban.controller.php';
+
+    if(isset($_GET['refresh'])){
+        header('location: carregarDashboard.php');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,8 +41,9 @@
               <div class="col-md-3">
                 <div class="box box1">
                   <div class="details">
-                    <h3>1213</h3>
-                    <h4>Projetos</h4>
+                  <?php $qtdP=0; foreach($projArray as $project){ $qtdP++; } ?>
+                    <h3><?php echo $qtdP; ?> </h3>
+                    <h4>Totais de Projetos</h4>
                   </div>
                   <div id="spark1"></div>
                 </div>
@@ -42,8 +51,21 @@
               <div class="col-md-3">
                 <div class="box box2">
                   <div class="details">
-                    <h3>422</h3>
-                    <h4>Tarefas</h4>
+                    <?php $qdtTarefa=0; $qdtTarefa02=0; $qdtTarefa03=0;
+                    
+                        foreach($tasks as $task){ 
+                          $id = $task['task_id'];
+                          $name = $task['task_name'];
+
+                          if($task['task_status'] == 1){
+                              $qdtTarefa++;
+                          } else if($task['task_status'] == 2){
+                              $qdtTarefa02++;
+                          } else if($task['task_status'] == 3) {
+                              $qdtTarefa03++;
+                        } }?>
+                    <h3><?php echo $qdtTarefa; ?></h3>
+                    <h4>Tarefas Pendentes</h4>
                   </div>
                   <div id="spark2"></div>
                 </div>
@@ -51,7 +73,7 @@
               <div class="col-md-3">
                 <div class="box box3">
                   <div class="details">
-                    <h3>311</h3>
+                    <h3><?php echo $qdtTarefa02; ?></h3>
                     <h4>Em andamento</h4>
                   </div>
                   <div id="spark3"></div>
@@ -60,8 +82,8 @@
               <div class="col-md-3">
                 <div class="box box4">
                   <div class="details">
-                    <h3>22</h3>
-                    <h4>Concluídas</h4>
+                    <h3><?php echo $qdtTarefa03; ?></h3>
+                    <h4>Tarefas Concluídas</h4>
                   </div>
                   <div id="spark4"></div>
                 </div>
@@ -71,7 +93,7 @@
              <div class="row mt-4">
               <div class="col-md-5">
                 <div class="box shadow mt-4">
-                  <div id="radialBarBottom"></div>
+                  <div id="chart"></div>
                 </div>
               </div>
               <div class="col-md-7">

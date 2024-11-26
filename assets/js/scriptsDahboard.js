@@ -332,96 +332,50 @@ window.Apex = {
     stroke: {
       lineCap: 'round'
     },
-    series: [71, 63, 77],
-    labels: ['June', 'May', 'April'],
+    series: [100, 10, 50],
+    labels: ['Pendente', 'Em andamento', 'Concluído'],
     legend: {
       show: true,
       floating: true,
       position: 'right',
-      offsetX: 70,
-      offsetY: 230
+      offsetX: 20,
+      offsetY: 250
     },
   }
   
   var chartCircle4 = new ApexCharts(document.querySelector('#radialBarBottom'), optionsCircle4);
   chartCircle4.render();
-  
-  
-  var optionsBar = {
+
+
+
+  var options = {
+    series: [55, 67, 83],
     chart: {
-      height: 380,
-      type: 'bar',
-      stacked: true,
-    },
-    plotOptions: {
-      bar: {
-        columnWidth: '30%',
-        horizontal: false,
-      },
-    },
-    series: [{
-      name: 'PRODUCT A',
-      data: [14, 25, 21, 17, 12, 13, 11, 19]
-    }, {
-      name: 'PRODUCT B',
-      data: [13, 23, 20, 8, 13, 27, 33, 12]
-    }, {
-      name: 'PRODUCT C',
-      data: [11, 17, 15, 15, 21, 14, 15, 13]
-    }],
-    xaxis: {
-      categories: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2', '2012 Q3', '2012 Q4'],
-    },
-    fill: {
-      opacity: 1
-    },
-  
-  }
-  
-  var chartBar = new ApexCharts(
-    document.querySelector("#barchart"),
-    optionsBar
-  );
-  
-  chartBar.render();
-  
-  var optionsArea = {
-    chart: {
-      height: 380,
-      type: 'area',
-      stacked: false,
-    },
-    stroke: {
-      curve: 'straight'
-    },
-    series: [{
-        name: "Music",
-        data: [11, 15, 26, 20, 33, 27]
-      },
-      {
-        name: "Photos",
-        data: [32, 33, 21, 42, 19, 32]
-      },
-      {
-        name: "Files",
-        data: [20, 39, 52, 11, 29, 43]
+    height: 350,
+    type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      dataLabels: {
+        name: {
+          fontSize: '22px',
+        },
+        value: {
+          fontSize: '16px',
+        },
+        total: {
+          show: true,
+          label: 'Total de Tarefas',
+          formatter: function (w) {
+            // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+            return 249
+          }
+        }
       }
-    ],
-    xaxis: {
-      categories: ['2024 Q1', '2024 Q2', '2024 Q3', '2024 Q4', '2025 Q1', '2025 Q2'],
-    },
-    tooltip: {
-      followCursor: true
-    },
-    fill: {
-      opacity: 1,
-    },
-  
-  }
-  
-  var chartArea = new ApexCharts(
-    document.querySelector("#areachart"),
-    optionsArea
-  );
-  
-  chartArea.render();
+    }
+  },
+  labels: ['Concluídos', 'Em andamento', 'Pendentes'],
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();

@@ -1,12 +1,8 @@
 <?php
     require 'kanban.controller.php';
-
+    
     if(isset($_GET['refresh'])){
-        header('location: painel.php');
-    }
-
-    if(isset($_GET['refresh'])){
-        header('location: gerenciadorProjetos.php#');
+        header('location: gerenciadorProjetos.php');
     }
 
     $total = $_SESSION['total']; 
@@ -133,7 +129,7 @@
             <div class="flex-shrink-0"  id="UsuarioPgMeioProjects">
                 <div class="aside-header">
                     <div class="aside-title-container">
-                        <h2 style="color: #FFF; font-size: 20px; margin-top: 6px;">Canal de Projeto(s)</h2>
+                        <h2 style="color: #FFF; font-size: 20px; margin-top: 6px;">---- Projeto(s)</h2>
                         <i class="fas fa-plus btn-add" onclick="addProjectForm()" style="cursor: pointer;"></i>
                     </div>
 
@@ -202,7 +198,7 @@
                         </svg> Usuários</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./register.php"><i class="fas fa-user"></i>+ Adicionar Usuário</a>
+                    <a class="nav-link" href="#><i class="fas fa-user"></i>+ Adicionar Usuário</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-user-slash"></i> Remover Usuário</a>

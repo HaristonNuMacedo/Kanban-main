@@ -32,6 +32,7 @@
         $setTotalTask = new Project();
         $setTotalTask->__set('project_id', $id);
         $setTotalTask->__set('db', $db->connect());
+
         $setTotalTask->__set('total', $_SESSION['total']);
         $setTotalTask->setTotal();
 
@@ -69,6 +70,7 @@
                 $count1++;
             }
         }
+        
     }
     $countTotal = $count1 + $count2 + $count3;
     // echo $count1, $count2, $count3,  $countTotal;
@@ -219,6 +221,6 @@
             if(isset($_GET['refresh'])){
                 header('location: painel.php?refresh');
             }
-        }     
+        }   
     }
 ?>

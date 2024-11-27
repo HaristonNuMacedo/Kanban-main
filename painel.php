@@ -3,7 +3,8 @@
 <section class="cards-container">
 
     <!-- card pendente -->
-    <?php if($count1 == 0){
+    <?php 
+    if($count1 == 0){
     ?>
         <div class="card">
             <div class="card-header-1">
@@ -36,9 +37,11 @@
 
             <?php foreach($tasks as $task){ 
                 if($task['task_status'] == 1){
+
             ?>
                 <div class="card-item id<?php echo $task['task_id'] ?>">
-                    <h2 style="margin-bottom: 5px"><?php echo $task['task_name'] ?></h2>
+                    <h2 style="margin-bottom: 5px">
+                        <?php echo $task['task_name']; ?></h2>
                         <p><?php echo $task['task_description'] ?></p> 
                         <div class="dataReader"><i class="far fa-calendar"></i>
                             <p4 style="display: none;"><?php echo date('Y-m-d', strtotime($task['dataTask'])); ?></p4>
